@@ -16,6 +16,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Cache cargo registry
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/registry
+          key: cargo-registry-${{ hashFiles('Cargo.lock') }}
+          restore-keys: cargo-registry-
+      - name: Cache cargo git
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/git
+          key: cargo-git-${{ hashFiles('Cargo.lock') }}
+          restore-keys: cargo-git-
+      - name: Cache target directory
+        uses: actions/cache@v3
+        with:
+          path: target
+          key: cargo-target-${{ hashFiles('Cargo.lock') }}
+          restore-keys: cargo-target-
       - name: Run publish pipeline
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
