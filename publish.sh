@@ -49,7 +49,7 @@ publish_manifest() {
     return 0
   fi
 
-  if [[ $output == *"is already uploaded"* ]]; then
+  if [[ $output == *"is already uploaded"* ]] || [[ $output == *"already exists on crates.io index"* ]]; then
     echo "$output"
     echo "Skipping publish for $manifest because that version already exists on crates.io."
     return 0
