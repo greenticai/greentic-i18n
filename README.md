@@ -6,3 +6,16 @@ This workspace contains the Greentic localization tooling:
 - `crates/greentic-i18n`: CLI surface that normalizes tags, resolves profiles, emits JSON, and supports debugging.
 
 The repo also documents the canonical CBOR schema, resolver contract, and CLI JSON schema so downstream services can rely on stable IDs and formatting outputs.
+
+## Install
+
+Install prebuilt binaries via `cargo-binstall`:
+
+```bash
+cargo binstall greentic-i18n
+```
+
+This installs both:
+
+- `greentic-i18n`
+- `greentic-i18n-translator`

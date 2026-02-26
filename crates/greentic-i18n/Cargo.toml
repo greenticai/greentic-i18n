@@ -28,7 +28,7 @@ name = "greentic-i18n-translator"
 path = "src/bin/greentic-i18n-translator.rs"
 
 [package.metadata.binstall]
-pkg-url = "{ repo }/releases/download/v{ version }/{ name }-{ target }{ archive-suffix }"
+pkg-url = "{ repo }/releases/download/v{ version }/greentic-i18n-v{ version }-{ target }{ archive-suffix }"
 pkg-fmt = "tgz"
 bin-dir = "{ bin }{ binary-ext }"
 

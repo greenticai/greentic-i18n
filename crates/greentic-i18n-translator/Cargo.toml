@@ -2,6 +2,7 @@
 name = "greentic-i18n-translator"
 version.workspace = true
 edition.workspace = true
+autobins = false
 license = "MIT"
 description = "CLI tooling for i18n translation workflows."
 repository = "https://github.com/greentic-ng/greentic-i18n"
@@ -9,6 +10,21 @@ homepage = "https://github.com/greentic-ng/greentic-i18n"
 documentation = "https://docs.rs/greentic-i18n-translator"
 keywords = ["cli", "i18n", "translation", "greentic"]
 readme = "../../README.md"
+
+[[bin]]
+name = "greentic-i18n-translator"
+path = "src/main.rs"
+
+[package.metadata.binstall]
+pkg-url = "{ repo }/releases/download/v{ version }/greentic-i18n-v{ version }-{ target }{ archive-suffix }"
+pkg-fmt = "tgz"
+bin-dir = "{ bin }{ binary-ext }"
+
+[package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
+pkg-fmt = "zip"
+
+[package.metadata.binstall.overrides.aarch64-pc-windows-msvc]
+pkg-fmt = "zip"
 
 [dependencies]
 clap = { workspace = true, features = ["derive"] }

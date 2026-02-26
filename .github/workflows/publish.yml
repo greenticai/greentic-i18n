@@ -117,18 +117,8 @@ jobs:
         env:
           TARGET: ${{ matrix.target }}
           ARCHIVE_FORMAT: ${{ matrix.archive_format }}
+          VERSION: ${{ needs.prepare.outputs.version }}
         run: |
-          if [[ "$TARGET" == *windows* ]]; then
-            EXT=.exe
-          else
-            EXT=
-          fi
-          ARCHIVE="greentic-i18n-${TARGET}"
-          if [[ "$ARCHIVE_FORMAT" == "tgz" ]]; then
-            ARCHIVE="${ARCHIVE}.tar.gz"
-          else
-            ARCHIVE="${ARCHIVE}.zip"
-          fi
           python3 - <<'PY'
           import os
           import pathlib
@@ -136,9 +126,10 @@ jobs:
           import zipfile
           
           target = os.environ["TARGET"]
+          version = os.environ["VERSION"]
           archive_format = os.environ["ARCHIVE_FORMAT"]
           ext = ".exe" if "windows" in target else ""
-          archive = f"greentic-i18n-{target}.tar.gz" if archive_format == "tgz" else f"greentic-i18n-{target}.zip"
+          archive = f"greentic-i18n-v{version}-{target}.tgz" if archive_format == "tgz" else f"greentic-i18n-v{version}-{target}.zip"
           
           bin_dir = pathlib.Path("target") / target / "release"
           files = [
