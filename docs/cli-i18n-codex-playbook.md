@@ -121,6 +121,108 @@ rg -n 'println!|eprintln!|format!\(|about\s*=|help\s*=|long_about|after_help' cr
    - `--locale <tag>` flag and/or `LANG`/`LC_ALL` support.
 5. Replace all inventoried literals with key lookups.
 
+### Locale detection reference implementation (reuse across repos)
+
+Use this exact precedence so CLI behavior is deterministic:
+
+1. `--locale <tag>` if passed
+2. Environment (`LC_ALL`, `LC_MESSAGES`, `LANG`)
+3. OS locale from `sys-locale`
+4. Fallback to `"en"`
+
+Add dependencies:
+
+```toml
+sys-locale = "0.3"
+unic-langid = "0.9"
+```
+
+Reference implementation:
+
+```rust
+use std::env;
+use unic_langid::LanguageIdentifier;
+
+fn detect_env_locale() -> Option<String> {
+    for key in ["LC_ALL", "LC_MESSAGES", "LANG"] {
+        if let Ok(val) = env::var(key) {
+            let trimmed = val.trim();
+            if !trimmed.is_empty() {
+                return Some(trimmed.to_string());
+            }
+        }
+    }
+    None
+}
+
+fn detect_system_locale() -> Option<String> {
+    sys_locale::get_locale()
+}
+
+fn normalize_locale(raw: &str) -> Option<String> {
+    // Handle common forms like en_US.UTF-8 or de_DE@euro before parsing.
+    let mut cleaned = raw.trim();
+    if cleaned.is_empty() {
+        return None;
+    }
+    if let Some((head, _)) = cleaned.split_once('.') {
+        cleaned = head;
+    }
+    if let Some((head, _)) = cleaned.split_once('@') {
+        cleaned = head;
+    }
+    let cleaned = cleaned.replace('_', "-");
+    cleaned
+        .parse::<LanguageIdentifier>()
+        .ok()
+        .map(|lid| lid.to_string())
+}
+
+fn base_language(tag: &str) -> Option<String> {
+    tag.split('-').next().map(|s| s.to_ascii_lowercase())
+}
+
+fn select_locale(cli_locale: Option<String>, supported: &[&str]) -> String {
+    fn resolve(candidate: &str, supported: &[&str]) -> Option<String> {
+        let norm = normalize_locale(candidate)?;
+        if supported.iter().any(|s| *s == norm) {
+            return Some(norm);
+        }
+        let base = base_language(&norm)?;
+        if supported.iter().any(|s| *s == base) {
+            return Some(base);
+        }
+        None
+    }
+
+    if let Some(cli) = cli_locale.as_deref() {
+        if let Some(found) = resolve(cli, supported) {
+            return found;
+        }
+    }
+
+    if let Some(env_loc) = detect_env_locale() {
+        if let Some(found) = resolve(&env_loc, supported) {
+            return found;
+        }
+    }
+
+    if let Some(sys_loc) = detect_system_locale() {
+        if let Some(found) = resolve(&sys_loc, supported) {
+            return found;
+        }
+    }
+
+    "en".to_string()
+}
+```
+
+Notes:
+
+- Example raw inputs that should normalize: `en_US.UTF-8`, `en_US`, `en-US`, `de_DE@euro`.
+- Never add OS-specific locale API calls manually; `sys-locale` already handles platform differences.
+- Keep `supported` in one source of truth (same language list used by translation validation).
+
 ## Phase 3: Build English source map
 
 ### Codex instructions
