@@ -9,13 +9,8 @@ The repo also documents the canonical CBOR schema, resolver contract, and CLI JS
 
 ## Install
 
-Install prebuilt binaries via `cargo-binstall`:
+Install the translator CLI via `cargo-binstall`:
 
 ```bash
-cargo binstall greentic-i18n
+cargo binstall greentic-i18n-translator
 ```
-
-This installs both:
-
-- `greentic-i18n`
-- `greentic-i18n-translator`

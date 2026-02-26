@@ -110,7 +110,7 @@ jobs:
           targets: ${{ matrix.target }}
 
       - name: Build package
-        run: cargo build --release --package greentic-i18n --target ${{ matrix.target }}
+        run: cargo build --release --package greentic-i18n-translator --target ${{ matrix.target }}
 
       - name: Package binaries
         shell: bash
@@ -129,25 +129,26 @@ jobs:
           version = os.environ["VERSION"]
           archive_format = os.environ["ARCHIVE_FORMAT"]
           ext = ".exe" if "windows" in target else ""
-          archive = f"greentic-i18n-v{version}-{target}.tgz" if archive_format == "tgz" else f"greentic-i18n-v{version}-{target}.zip"
+          base = f"greentic-i18n-translator-{target}-v{version}"
+          archive = f"{base}.tgz" if archive_format == "tgz" else f"{base}.zip"
+          staging = pathlib.Path(base)
+          staging.mkdir(parents=True, exist_ok=True)
           
           bin_dir = pathlib.Path("target") / target / "release"
-          files = [
-              bin_dir / f"greentic-i18n{ext}",
-              bin_dir / f"greentic-i18n-translator{ext}",
-          ]
-          for path in files:
-              if not path.exists():
-                  raise SystemExit(f"missing expected binary: {path}")
+          src_bin = bin_dir / f"greentic-i18n-translator{ext}"
+          if not src_bin.exists():
+              raise SystemExit(f"missing expected binary: {src_bin}")
+          dst_bin = staging / src_bin.name
+          dst_bin.write_bytes(src_bin.read_bytes())
           
           if archive_format == "tgz":
               with tarfile.open(archive, "w:gz") as tf:
-                  for path in files:
-                      tf.add(path, arcname=path.name)
+                  tf.add(staging, arcname=staging.name)
           else:
               with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as zf:
-                  for path in files:
-                      zf.write(path, arcname=path.name)
+                  for path in staging.rglob("*"):
+                      if path.is_file():
+                          zf.write(path, arcname=path.relative_to(staging.parent))
           print(archive)
           PY
 
@@ -155,7 +156,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-${{ matrix.target }}
-          path: greentic-i18n-v${{ needs.prepare.outputs.version }}-${{ matrix.target }}.*
+          path: greentic-i18n-translator-${{ matrix.target }}-v${{ needs.prepare.outputs.version }}.*
           if-no-files-found: error
 
   publish-github-release:
@@ -187,6 +188,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.prepare.outputs.tag }}
-          name: greentic-i18n ${{ needs.prepare.outputs.tag }}
+          name: greentic-i18n-translator ${{ needs.prepare.outputs.tag }}
           files: dist/*
           generate_release_notes: true

@@ -2,7 +2,6 @@
 name = "greentic-i18n"
 version.workspace = true
 edition.workspace = true
-autobins = false
 license = "MIT"
 description = "CLI entry point for Greentic i18n resolution and formatting."
 repository = "https://github.com/greentic-ng/greentic-i18n"
@@ -18,22 +17,3 @@ serde_json = { workspace = true }
 
 [dev-dependencies]
 assert_cmd = { workspace = true }
-
-[[bin]]
-name = "greentic-i18n"
-path = "src/main.rs"
-
-[[bin]]
-name = "greentic-i18n-translator"
-path = "src/bin/greentic-i18n-translator.rs"
-
-[package.metadata.binstall]
-pkg-url = "{ repo }/releases/download/v{ version }/greentic-i18n-v{ version }-{ target }{ archive-suffix }"
-pkg-fmt = "tgz"
-bin-dir = "{ bin }{ binary-ext }"
-
-[package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
-pkg-fmt = "zip"
-
-[package.metadata.binstall.overrides.aarch64-pc-windows-msvc]
-pkg-fmt = "zip"
