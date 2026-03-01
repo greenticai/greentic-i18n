@@ -283,7 +283,9 @@ tools/i18n.sh all
    - run `validate` successfully,
    - defer true translation generation until auth is available.
 4. Operational shortcut:
-   - run `tools/i18n.sh all` whenever English strings change.
+   - run `status` and `validate` first.
+   - run `translate` only when stale/missing keys are reported.
+   - scope `--langs` for dev loops; run full `all` only for release/CI regeneration.
 5. `--locale` scope:
    - today it applies to runtime messages emitted by command handlers.
    - clap-generated `--help`/usage text is still English with the current derive-based clap setup.

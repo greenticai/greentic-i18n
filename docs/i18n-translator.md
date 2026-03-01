@@ -74,9 +74,28 @@ CI uses `status` to fail when `i18n/en.json` changed but translations were not r
 
 - state file: `.i18n/translator-state.json` (committed)
 - cache dir: OS-local cache (not committed), override with `--cache-dir`
+- translator short-circuits provider calls when state proves a key is already up to date, even if local cache is empty
 
 ## Manual overrides
 
 Manual edits are preserved by default when English text is unchanged.
 
 Use `--overwrite-manual` to force regeneration.
+
+## Cost-aware usage
+
+For day-to-day development, prefer checks first and selective translation:
+
+```bash
+cargo run -p greentic-i18n-translator -- \
+  status --langs all --en i18n/en.json
+cargo run -p greentic-i18n-translator -- \
+  validate --langs all --en i18n/en.json
+```
+
+Translate only when status reports missing/stale keys, and scope languages when possible:
+
+```bash
+cargo run -p greentic-i18n-translator -- \
+  translate --langs ar,ja,en-GB --en i18n/en.json --max-retries 0
+```

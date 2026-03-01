@@ -400,6 +400,14 @@ fn translate_map_with_provider(
             continue;
         }
 
+        // If translator state says this key was bot-translated from the same
+        // English text and the current output still matches, keep it as-is.
+        // This avoids provider calls when local cache is cold/ephemeral.
+        if has_fresh_bot_translation(lang, key, en_text, &out_map, state) {
+            outcome.cache_hits += 1;
+            continue;
+        }
+
         let cache_key = CacheStore::cache_key(lang, en_text, glossary_version, RULES_VERSION);
         if let Some(cached) = cache.get(&cache_key)?
             && validate_translation(en_text, &cached).is_ok()
@@ -476,6 +484,23 @@ fn has_manual_override(
         return false;
     }
     hash_text(existing_translation) != key_state.last_bot_translation_hash
+}
+
+fn has_fresh_bot_translation(
+    lang: &str,
+    key: &str,
+    english_text: &str,
+    out_map: &JsonMap,
+    state: &TranslatorState,
+) -> bool {
+    let Some(existing_translation) = out_map.get(key) else {
+        return false;
+    };
+    let Some(key_state) = state.key_state(lang, key) else {
+        return false;
+    };
+    key_state.last_english_hash == hash_text(english_text)
+        && key_state.last_bot_translation_hash == hash_text(existing_translation)
 }
 
 fn status_for_lang(
@@ -930,6 +955,39 @@ mod tests {
         assert_eq!(provider.call_count(), 0);
         assert_eq!(outcome.manual_preserved, 1);
         assert_eq!(result.get("k"), Some(&"Bonjour manuel".to_string()));
+        let _ = fs::remove_dir_all(cache_dir);
+    }
+
+    #[test]
+    fn fresh_state_skips_provider_call_without_cache() {
+        let provider = MockProvider::new();
+        let mut en = JsonMap::new();
+        en.insert("k".to_string(), "Hello".to_string());
+
+        let mut out = JsonMap::new();
+        out.insert("k".to_string(), "Bonjour".to_string());
+
+        let mut state = TranslatorState::default();
+        state.set_key_state(
+            "fr",
+            "k",
+            hash_text("Hello"),
+            hash_text("Bonjour"),
+            "codex-cli",
+        );
+
+        let cache_dir = temp_cache_dir("fresh-state");
+        let cache = CacheStore::new(cache_dir.clone());
+        let gv = glossary_version(None).expect("glossary version");
+
+        let (result, outcome) = translate_map_with_provider(
+            &provider, "fr", &en, out, None, &gv, 10, 2, &cache, &mut state, false,
+        )
+        .expect("translate should succeed");
+
+        assert_eq!(provider.call_count(), 0);
+        assert_eq!(outcome.translated, 0);
+        assert_eq!(result.get("k"), Some(&"Bonjour".to_string()));
         let _ = fs::remove_dir_all(cache_dir);
     }
 

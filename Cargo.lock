@@ -201,17 +201,16 @@ checksum = "5baebc0774151f905a1a2cc41989300b1e6fbb29aff0ceffa1064fdd3088d582"
 
 [[package]]
 name = "greentic-i18n"
-version = "0.4.6"
+version = "0.4.7"
 dependencies = [
  "assert_cmd",
  "greentic-i18n-lib",
- "greentic-i18n-translator",
  "serde_json",
 ]
 
 [[package]]
 name = "greentic-i18n-lib"
-version = "0.4.6"
+version = "0.4.7"
 dependencies = [
  "blake3",
  "data-encoding",
@@ -220,7 +219,7 @@ dependencies = [
 
 [[package]]
 name = "greentic-i18n-translator"
-version = "0.4.6"
+version = "0.4.7"
 dependencies = [
  "blake3",
  "clap",
