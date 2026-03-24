@@ -1,0 +1,15 @@
+{
+  "card.welcome.body_0.text": "Welcome to Greentic!",
+  "card.welcome.body_1.text": "How can I help you today?",
+  "card.welcome.actions_0.title": "Get Started",
+  "card.welcome.actions_1.title": "Contact Support",
+  "card.form.body_0.text": "Please fill in your details",
+  "card.form.body_1.label": "Your Name",
+  "card.form.body_1.placeholder": "Enter your full name",
+  "card.form.body_1.errorMessage": "Name is required",
+  "card.form.body_2.label": "Department",
+  "card.form.body_2_choices_0.title": "Engineering",
+  "card.form.body_2_choices_1.title": "Sales",
+  "card.form.body_2_choices_2.title": "Support",
+  "card.form.actions_0.title": "Submit"
+}
