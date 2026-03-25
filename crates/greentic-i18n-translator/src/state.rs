@@ -97,4 +97,36 @@ impl TranslatorState {
             },
         );
     }
+
+    pub fn backfill_missing_keys_from_maps(
+        &mut self,
+        lang: &str,
+        en_map: &BTreeMap<String, String>,
+        tr_map: &BTreeMap<String, String>,
+        engine: &str,
+    ) -> usize {
+        let lang_state = self.langs.entry(lang.to_string()).or_default();
+        let before = lang_state.keys.len();
+        let timestamp_epoch_secs = now_epoch_secs();
+
+        for (key, en_text) in en_map {
+            if lang_state.keys.contains_key(key) {
+                continue;
+            }
+            let Some(translated_text) = tr_map.get(key) else {
+                continue;
+            };
+            lang_state.keys.insert(
+                key.clone(),
+                KeyState {
+                    last_english_hash: hash_text(en_text),
+                    last_bot_translation_hash: hash_text(translated_text),
+                    engine: engine.to_string(),
+                    timestamp_epoch_secs,
+                },
+            );
+        }
+
+        lang_state.keys.len().saturating_sub(before)
+    }
 }
