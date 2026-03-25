@@ -1,22 +1,27 @@
 # SECURITY_FIX_REPORT
 
 Date (UTC): 2026-03-25
-Branch: `ci/add-workflow-permissions`
-Commit: `42d4da5`
+Branch: `feat/state-rebuild-v2`
+Commit: `bec277e`
 
 ## Inputs Reviewed
 - `security-alerts.json`: `{"dependabot": [], "code_scanning": []}`
 - `dependabot-alerts.json`: `[]`
 - `code-scanning-alerts.json`: `[]`
+- `all-dependabot-alerts.json`: `[]`
+- `all-code-scanning-alerts.json`: `[]`
 - `pr-vulnerable-changes.json`: `[]`
 
 ## PR Dependency Review
-- Checked Rust dependency manifests/lockfiles in the workspace:
+- Reviewed dependency-related files in this repository:
   - `Cargo.toml`
   - `Cargo.lock`
   - `crates/**/Cargo.toml`
-- Diff check against latest commit scope (`HEAD~1..HEAD`) found no dependency-file changes.
-- Working tree diff for dependency files found no uncommitted dependency changes.
+- Checked latest PR commit scope (`HEAD~1..HEAD`) for dependency-file changes.
+- Observed dependency-file changes in this scope:
+  - `Cargo.toml`: workspace version bump `0.4.10 -> 0.4.11`
+  - `Cargo.lock`: routine package version updates (e.g., `anstyle`, `cc`, `colorchoice`, `itoa`) and workspace crate version bumps.
+- No new PR dependency vulnerabilities were provided in input (`[]`).
 
 ## Vulnerabilities Identified
 - Dependabot alerts: none.
@@ -25,8 +30,8 @@ Commit: `42d4da5`
 
 ## Remediation Actions
 - No vulnerabilities required remediation.
-- No dependency or source code changes were made.
+- No source or dependency changes were necessary for this CI run.
 
 ## Outcome
-- Repository is clear for the provided security alert inputs.
-- No security fixes were necessary for this CI run.
+- Security review completed for provided inputs and current PR dependency-file changes.
+- No actionable vulnerabilities found.
