@@ -244,13 +244,14 @@ fn run_status(langs: &str, en_path: &Path, i18n: &CliI18n) -> Result<(), String>
     let repo_root =
         env::current_dir().map_err(|err| format!("failed to read current working dir: {err}"))?;
     let state_path = TranslatorState::default_path(&repo_root);
-    let state = TranslatorState::load(&state_path)?;
+    let mut state = TranslatorState::load(&state_path)?;
     println!(
         "{}",
         i18n.tf("cli.status.header", &[&langs.len().to_string()])
     );
 
     let mut failing_langs = 0usize;
+    let mut rebuilt_keys = 0usize;
     for lang in langs {
         let lang_path = lang_path_for(en_path, &lang)?;
         let tr_map = if lang_path.exists() {
@@ -258,6 +259,8 @@ fn run_status(langs: &str, en_path: &Path, i18n: &CliI18n) -> Result<(), String>
         } else {
             JsonMap::new()
         };
+        rebuilt_keys +=
+            backfill_state_from_existing_translation(&mut state, &lang, &en_map, &tr_map);
         let outcome = status_for_lang(&lang, &en_map, &tr_map, &state);
         if outcome.missing_keys.is_empty() && outcome.stale_keys.is_empty() {
             println!("{}", i18n.tf("cli.lang.ok", &[&lang]));
@@ -281,6 +284,10 @@ fn run_status(langs: &str, en_path: &Path, i18n: &CliI18n) -> Result<(), String>
                 println!("{}", i18n.tf("cli.status.lang.stale", &[&key]));
             }
         }
+    }
+
+    if rebuilt_keys > 0 {
+        state.save(&state_path)?;
     }
 
     if failing_langs > 0 {
@@ -333,6 +340,7 @@ fn run_translate(args: RunTranslateArgs<'_>, i18n: &CliI18n) -> Result<(), Strin
         } else {
             JsonMap::new()
         };
+        backfill_state_from_existing_translation(&mut state, &lang, &en_map, &existing_map);
 
         let (out_map, outcome) = translate_map_with_provider(
             &provider,
@@ -465,6 +473,15 @@ fn translate_map_with_provider(
     }
 
     Ok((out_map, outcome))
+}
+
+fn backfill_state_from_existing_translation(
+    state: &mut TranslatorState,
+    lang: &str,
+    en_map: &JsonMap,
+    tr_map: &JsonMap,
+) -> usize {
+    state.backfill_missing_keys_from_maps(lang, en_map, tr_map, ENGINE_TAG)
 }
 
 fn has_manual_override(
@@ -843,7 +860,10 @@ fn print_translate_help(i18n: &CliI18n) {
 
 #[cfg(test)]
 mod tests {
-    use super::{glossary_version, status_for_lang, translate_map_with_provider};
+    use super::{
+        backfill_state_from_existing_translation, glossary_version, status_for_lang,
+        translate_map_with_provider,
+    };
     use crate::cache::CacheStore;
     use crate::json_map::JsonMap;
     use crate::provider::TranslatorProvider;
@@ -1034,5 +1054,49 @@ mod tests {
         let outcome = status_for_lang("fr", &en, &tr, &state);
         assert!(outcome.missing_keys.is_empty());
         assert!(outcome.stale_keys.is_empty());
+    }
+
+    #[test]
+    fn backfill_state_marks_existing_translation_as_up_to_date() {
+        let mut en = JsonMap::new();
+        en.insert("k1".to_string(), "Hello".to_string());
+
+        let mut tr = JsonMap::new();
+        tr.insert("k1".to_string(), "Bonjour".to_string());
+
+        let mut state = TranslatorState::default();
+        let added = backfill_state_from_existing_translation(&mut state, "fr", &en, &tr);
+
+        assert_eq!(added, 1);
+        let outcome = status_for_lang("fr", &en, &tr, &state);
+        assert!(outcome.missing_keys.is_empty());
+        assert!(outcome.stale_keys.is_empty());
+    }
+
+    #[test]
+    fn backfill_state_does_not_overwrite_existing_state_entry() {
+        let mut en = JsonMap::new();
+        en.insert("k1".to_string(), "Hello".to_string());
+
+        let mut tr = JsonMap::new();
+        tr.insert("k1".to_string(), "Bonjour manuel".to_string());
+
+        let mut state = TranslatorState::default();
+        state.set_key_state(
+            "fr",
+            "k1",
+            hash_text("Hello"),
+            hash_text("Bonjour bot"),
+            "codex-cli",
+        );
+
+        let added = backfill_state_from_existing_translation(&mut state, "fr", &en, &tr);
+
+        assert_eq!(added, 0);
+        let key_state = state.key_state("fr", "k1").expect("key state should exist");
+        assert_eq!(
+            key_state.last_bot_translation_hash,
+            hash_text("Bonjour bot")
+        );
     }
 }

@@ -75,6 +75,7 @@ CI uses `status` to fail when `i18n/en.json` changed but translations were not r
 - state file: `.i18n/translator-state.json` (committed)
 - cache dir: OS-local cache (not committed), override with `--cache-dir`
 - translator short-circuits provider calls when state proves a key is already up to date, even if local cache is empty
+- if state entries are missing for existing translated keys, `status` and `translate` backfill them automatically from the current `i18n/<lang>.json` files
 
 ## Manual overrides
 
