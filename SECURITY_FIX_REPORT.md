@@ -1,22 +1,22 @@
 # SECURITY_FIX_REPORT
 
-Date (UTC): 2026-03-25
-Branch: `ci/add-workflow-permissions`
-Commit: `42d4da5`
+Date (UTC): 2026-03-26
+Branch: chore/shared-ci-template
+Commit: 711df13
 
 ## Inputs Reviewed
-- `security-alerts.json`: `{"dependabot": [], "code_scanning": []}`
-- `dependabot-alerts.json`: `[]`
-- `code-scanning-alerts.json`: `[]`
-- `pr-vulnerable-changes.json`: `[]`
+- Security alerts JSON: {"dependabot": [], "code_scanning": []}
+- New PR dependency vulnerabilities: []
 
 ## PR Dependency Review
-- Checked Rust dependency manifests/lockfiles in the workspace:
-  - `Cargo.toml`
-  - `Cargo.lock`
-  - `crates/**/Cargo.toml`
-- Diff check against latest commit scope (`HEAD~1..HEAD`) found no dependency-file changes.
-- Working tree diff for dependency files found no uncommitted dependency changes.
+- Located dependency manifests/lockfiles:
+  - Cargo.toml
+  - Cargo.lock
+  - crates/greentic-i18n/Cargo.toml
+  - crates/greentic-i18n-lib/Cargo.toml
+  - crates/greentic-i18n-translator/Cargo.toml
+- Compared PR changes against origin/main...HEAD for dependency files.
+- Result: no dependency file changes introduced by this PR.
 
 ## Vulnerabilities Identified
 - Dependabot alerts: none.
@@ -25,8 +25,9 @@ Commit: `42d4da5`
 
 ## Remediation Actions
 - No vulnerabilities required remediation.
-- No dependency or source code changes were made.
+- No dependency or source-code security fixes were applied.
+- Updated this report to document verification steps and results.
 
 ## Outcome
-- Repository is clear for the provided security alert inputs.
-- No security fixes were necessary for this CI run.
+- No actionable security findings for this CI run.
+- Security posture unchanged by this PR based on provided inputs and dependency diff review.
