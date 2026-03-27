@@ -1,22 +1,23 @@
 # SECURITY_FIX_REPORT
 
 Date (UTC): 2026-03-27
-Branch: chore/shared-codex-security-fix
-Commit: 69c52e4
+Branch: chore/sync-toolchain
+Commit: f116b58
 
 ## Inputs Reviewed
 - Security alerts JSON: {"dependabot": [], "code_scanning": []}
 - New PR dependency vulnerabilities: []
 
 ## PR Dependency Review
-- Located dependency manifests/lockfiles:
+- Reviewed dependency manifests/lockfiles in repo:
   - Cargo.toml
   - Cargo.lock
   - crates/greentic-i18n/Cargo.toml
   - crates/greentic-i18n-lib/Cargo.toml
   - crates/greentic-i18n-translator/Cargo.toml
-- Compared PR changes against `origin/main...HEAD` for dependency files.
-- Result: no dependency file changes introduced by this PR.
+- Checked changed files in this workspace (`git diff --name-only`):
+  - pr-comment.md
+- Result: no dependency files were modified in this PR workspace.
 
 ## Vulnerabilities Identified
 - Dependabot alerts: none.
@@ -26,8 +27,8 @@ Commit: 69c52e4
 ## Remediation Actions
 - No vulnerabilities required remediation.
 - No dependency or source-code security fixes were applied.
-- Updated this report to document verification steps and results for this CI run.
+- Wrote this report for CI traceability.
 
 ## Outcome
 - No actionable security findings for this CI run.
-- Security posture unchanged by this PR based on provided inputs and dependency diff review.
+- Security posture unchanged based on provided alerts and dependency-change review.
