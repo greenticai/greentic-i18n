@@ -1,8 +1,8 @@
 # SECURITY_FIX_REPORT
 
-Date (UTC): 2026-03-26
-Branch: chore/shared-ci-template
-Commit: 711df13
+Date (UTC): 2026-03-27
+Branch: chore/shared-codex-security-fix
+Commit: 69c52e4
 
 ## Inputs Reviewed
 - Security alerts JSON: {"dependabot": [], "code_scanning": []}
@@ -15,7 +15,7 @@ Commit: 711df13
   - crates/greentic-i18n/Cargo.toml
   - crates/greentic-i18n-lib/Cargo.toml
   - crates/greentic-i18n-translator/Cargo.toml
-- Compared PR changes against origin/main...HEAD for dependency files.
+- Compared PR changes against `origin/main...HEAD` for dependency files.
 - Result: no dependency file changes introduced by this PR.
 
 ## Vulnerabilities Identified
@@ -26,7 +26,7 @@ Commit: 711df13
 ## Remediation Actions
 - No vulnerabilities required remediation.
 - No dependency or source-code security fixes were applied.
-- Updated this report to document verification steps and results.
+- Updated this report to document verification steps and results for this CI run.
 
 ## Outcome
 - No actionable security findings for this CI run.
