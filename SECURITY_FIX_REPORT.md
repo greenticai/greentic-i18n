@@ -1,31 +1,26 @@
 # SECURITY_FIX_REPORT
 
 Date: 2026-04-01 (UTC)
-Branch: `ci/enable-semver-checks`
+Branch: `chore/add-dependency-review`
 
 ## Alerts Reviewed
-- Dependabot alerts: 0
-- Code scanning alerts: 0
-- New PR dependency vulnerabilities: 0
+- Dependabot alerts (`security-alerts.json`): 0
+- Code scanning alerts (`security-alerts.json`): 0
+- Dependabot alerts (`dependabot-alerts.json`): 0
+- Code scanning alerts (`code-scanning-alerts.json`): 0
+- Aggregated Dependabot alerts (`all-dependabot-alerts.json`): 0
+- Aggregated code scanning alerts (`all-code-scanning-alerts.json`): 0
+- PR-filtered code scanning alerts (`pr-code-scanning-filtered.json`): 0
+- PR vulnerable changes (`pr-vulnerable-changes.json`): 0
 
-## PR Dependency Review
-- Reviewed PR changed files from `pr-changed-files.txt`.
-- Changed file list contains only: `.github/workflows/codex-semver-fix.yml`.
-- Enumerated repository dependency manifests:
-  - `Cargo.toml`
-  - `Cargo.lock`
-  - `crates/greentic-i18n/Cargo.toml`
-  - `crates/greentic-i18n-lib/Cargo.toml`
-  - `crates/greentic-i18n-translator/Cargo.toml`
-- Result: no dependency file changes in this PR scope.
+## PR Scope Reviewed
+- Changed file list (`pr-changed-files.txt`) contains:
+  - `.github/workflows/dependency-review.yml`
 
 ## Remediation Actions
-- No vulnerabilities were present in provided alert inputs.
-- No new dependency vulnerabilities were introduced by PR dependency changes.
-- No code or dependency remediation was required.
-
-## Notes
-- Attempted to run `cargo audit` for an additional local verification pass, but CI sandbox restrictions prevented rustup temp-file creation under `/home/runner/.rustup`.
+- No vulnerabilities were present in provided Dependabot or code scanning alert inputs.
+- No vulnerable PR changes were identified.
+- No code changes were required to remediate security issues.
 
 ## Final Status
 - Security review completed.
