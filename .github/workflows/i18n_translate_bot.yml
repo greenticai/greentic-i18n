@@ -11,6 +11,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   translate:
     if: github.event_name != 'pull_request_target' || github.event.label.name == 'i18n:translate'
