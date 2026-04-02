@@ -1,27 +1,23 @@
 # SECURITY_FIX_REPORT
 
-Date: 2026-04-01 (UTC)
-Branch: `chore/add-dependency-review`
+Date: 2026-04-02 (UTC)
 
-## Alerts Reviewed
-- Dependabot alerts (`security-alerts.json`): 0
-- Code scanning alerts (`security-alerts.json`): 0
-- Dependabot alerts (`dependabot-alerts.json`): 0
-- Code scanning alerts (`code-scanning-alerts.json`): 0
-- Aggregated Dependabot alerts (`all-dependabot-alerts.json`): 0
-- Aggregated code scanning alerts (`all-code-scanning-alerts.json`): 0
-- PR-filtered code scanning alerts (`pr-code-scanning-filtered.json`): 0
-- PR vulnerable changes (`pr-vulnerable-changes.json`): 0
+## Input Reviewed
+- Dependabot alerts: `0`
+- Code scanning alerts: `0`
 
-## PR Scope Reviewed
-- Changed file list (`pr-changed-files.txt`) contains:
-  - `.github/workflows/dependency-review.yml`
+Source:
+- `security-alerts.json`
+
+## Analysis
+- Reviewed all provided security alerts.
+- No Dependabot vulnerabilities were reported.
+- No code scanning findings were reported.
 
 ## Remediation Actions
-- No vulnerabilities were present in provided Dependabot or code scanning alert inputs.
-- No vulnerable PR changes were identified.
-- No code changes were required to remediate security issues.
+- No vulnerable dependencies or code issues were identified.
+- No code changes were required.
 
 ## Final Status
 - Security review completed.
-- No actionable security fixes necessary.
+- No actionable security fixes necessary for this CI run.
