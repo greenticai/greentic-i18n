@@ -1,18 +1,29 @@
 [package]
 name = "greentic-i18n"
-version.workspace = true
-edition.workspace = true
 license = "MIT"
 description = "CLI entry point for Greentic i18n resolution and formatting."
 repository = "https://github.com/greentic-ng/greentic-i18n"
 homepage = "https://github.com/greentic-ng/greentic-i18n"
 documentation = "https://docs.rs/greentic-i18n"
-keywords = ["cli", "i18n", "greentic"]
+keywords = [
+    "cli",
+    "i18n",
+    "greentic",
+]
 readme = "../../README.md"
 
-[dependencies]
-greentic-i18n-lib = { path = "../greentic-i18n-lib", version = "0.4.1" }
-serde_json = { workspace = true }
+[package.version]
+workspace = true
 
-[dev-dependencies]
-assert_cmd = { workspace = true }
+[package.edition]
+workspace = true
+
+[dependencies.greentic-i18n-lib]
+path = "../greentic-i18n-lib"
+version = ">=0.4.0-0, <0.5.0-0"
+
+[dependencies.serde_json]
+workspace = true
+
+[dev-dependencies.assert_cmd]
+workspace = true
