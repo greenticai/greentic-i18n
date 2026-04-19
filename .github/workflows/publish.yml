@@ -2,7 +2,7 @@ name: Publish And Release
 
 on:
   push:
-    tags: [ "v*" ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -80,7 +80,6 @@ jobs:
   build-release-artifacts:
     name: Build release binaries (${{ matrix.target }})
     needs: [prepare, publish-crates]
-    if: needs.prepare.outputs.tag_exists != 'true'
     strategy:
       fail-fast: false
       matrix:
@@ -166,7 +165,6 @@ jobs:
   publish-github-release:
     name: Publish GitHub release
     needs: [prepare, build-release-artifacts]
-    if: needs.prepare.outputs.tag_exists != 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -175,6 +173,7 @@ jobs:
           fetch-depth: 0
 
       - name: Create git tag
+        if: needs.prepare.outputs.tag_exists != 'true'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
