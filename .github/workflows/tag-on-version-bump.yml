@@ -3,8 +3,7 @@
 name: Tag on Version Bump
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
