@@ -3,9 +3,11 @@ name: i18n Validate
 on:
   pull_request:
     paths:
-      - "i18n/**/*.json"
+      - "crates/greentic-i18n/i18n/**/*.json"
+      - "crates/greentic-i18n-translator/i18n/**/*.json"
       - ".i18n/translator-state.json"
       - "crates/greentic-i18n-translator/**"
+      - "tools/i18n.sh"
       - ".github/workflows/i18n_validate.yml"
       - ".github/workflows/i18n_translate_bot.yml"
 
@@ -35,47 +37,17 @@ jobs:
         with:
           filters: |
             i18n_any:
-              - "i18n/**/*.json"
+              - "crates/greentic-i18n/i18n/**/*.json"
+              - "crates/greentic-i18n-translator/i18n/**/*.json"
             staleness:
-              - "i18n/en.json"
+              - "crates/greentic-i18n/i18n/en.json"
+              - "crates/greentic-i18n-translator/i18n/en.json"
               - ".i18n/translator-state.json"
 
-      - name: Resolve language list
-        id: langs
-        if: steps.changes.outputs.i18n_any == 'true'
-        shell: bash
-        run: |
-          if [[ ! -f i18n/en.json ]]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "reason=i18n/en.json is missing" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          LANGS=$(find i18n -maxdepth 1 -type f -name '*.json' -printf '%f\n' \
-            | sed -E 's/\.json$//' \
-            | grep -v '^en$' \
-            | sort \
-            | paste -sd, -)
-          if [[ -z "$LANGS" ]]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "reason=no non-English i18n/*.json files found" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          echo "skip=false" >> "$GITHUB_OUTPUT"
-          echo "langs=$LANGS" >> "$GITHUB_OUTPUT"
-
       - name: Validate translations
-        if: steps.changes.outputs.i18n_any == 'true' && steps.langs.outputs.skip != 'true'
-        run: |
-          cargo run -p greentic-i18n-translator -- \
-            validate --langs "${{ steps.langs.outputs.langs }}" --en i18n/en.json
-
-      - name: Skip reason
-        if: steps.changes.outputs.i18n_any == 'true' && steps.langs.outputs.skip == 'true'
-        run: |
-          echo "Skipped i18n validate: ${{ steps.langs.outputs.reason }}"
+        if: steps.changes.outputs.i18n_any == 'true'
+        run: tools/i18n.sh validate
 
       - name: Staleness check (when en/state changed)
-        if: steps.changes.outputs.staleness == 'true' && steps.langs.outputs.skip != 'true'
-        run: |
-          cargo run -p greentic-i18n-translator -- \
-            status --langs "${{ steps.langs.outputs.langs }}" --en i18n/en.json
+        if: steps.changes.outputs.staleness == 'true'
+        run: tools/i18n.sh status

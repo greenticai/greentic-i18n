@@ -103,8 +103,44 @@ fn to_git_path(repo_root: &Path, path: &Path) -> Result<String, String> {
 
 #[cfg(test)]
 mod tests {
-    use super::{DiffReport, diff_en_maps};
+    use super::{DiffReport, diff_en_at_refs, diff_en_maps, merge_base, read_file_at_ref};
     use crate::json_map::JsonMap;
+    use std::fs;
+    use std::path::{Path, PathBuf};
+    use std::process::Command;
+    use std::time::{SystemTime, UNIX_EPOCH};
+
+    fn temp_repo(name: &str) -> PathBuf {
+        let stamp = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .expect("valid system clock")
+            .as_nanos();
+        std::env::temp_dir().join(format!("gt-i18n-git-{name}-{stamp}"))
+    }
+
+    fn git(repo: &Path, args: &[&str]) {
+        let status = Command::new("git")
+            .arg("-C")
+            .arg(repo)
+            .args(args)
+            .status()
+            .expect("git should execute");
+        assert!(status.success(), "git {:?} should succeed", args);
+    }
+
+    fn git_output(repo: &Path, args: &[&str]) -> String {
+        let output = Command::new("git")
+            .arg("-C")
+            .arg(repo)
+            .args(args)
+            .output()
+            .expect("git should execute");
+        assert!(output.status.success(), "git {:?} should succeed", args);
+        String::from_utf8(output.stdout)
+            .expect("git output should be utf8")
+            .trim()
+            .to_string()
+    }
 
     #[test]
     fn diff_en_maps_computes_added_removed_updated() {
@@ -139,5 +175,47 @@ mod tests {
         assert!(report.added.is_empty());
         assert!(report.removed.is_empty());
         assert!(report.updated.is_empty());
+    }
+
+    #[test]
+    fn git_helpers_read_refs_and_compute_diff() {
+        let repo = temp_repo("diff");
+        fs::create_dir_all(repo.join("i18n")).expect("repo dir should exist");
+        git(&repo, &["init"]);
+        git(&repo, &["config", "user.name", "Codex"]);
+        git(&repo, &["config", "user.email", "codex@example.com"]);
+
+        let en_path = repo.join("i18n/en.json");
+        fs::write(&en_path, "{\n  \"hello\": \"Hello\"\n}\n").expect("write should succeed");
+        git(&repo, &["add", "."]);
+        git(&repo, &["commit", "-m", "base"]);
+        let base = git_output(&repo, &["rev-parse", "HEAD"]);
+
+        git(&repo, &["checkout", "-b", "feature"]);
+        fs::write(
+            &en_path,
+            "{\n  \"hello\": \"Hello there\",\n  \"bye\": \"Bye\"\n}\n",
+        )
+        .expect("write should succeed");
+        git(&repo, &["add", "."]);
+        git(&repo, &["commit", "-m", "head"]);
+        let head = git_output(&repo, &["rev-parse", "HEAD"]);
+
+        assert_eq!(
+            merge_base(&repo, &base, &head).expect("merge-base should work"),
+            base
+        );
+        assert!(
+            read_file_at_ref(&repo, &base, &en_path)
+                .expect("git show should work")
+                .contains("\"hello\": \"Hello\"")
+        );
+
+        let report = diff_en_at_refs(&repo, &base, &head, &en_path).expect("diff should work");
+        assert_eq!(report.added, vec!["bye".to_string()]);
+        assert_eq!(report.updated, vec!["hello".to_string()]);
+        assert!(report.removed.is_empty());
+
+        let _ = fs::remove_dir_all(repo);
     }
 }
