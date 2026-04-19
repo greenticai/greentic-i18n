@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "global": {
+    "line_coverage_min": 60.0
+  },
+  "defaults": {
+    "per_file_line_coverage_min": 60.0
+  },
+  "exclusions": {
+    "files": [
+      "crates/greentic-i18n/src/main.rs",
+      "crates/greentic-i18n-translator/src/lib.rs",
+      "crates/greentic-i18n-translator/src/main.rs"
+    ]
+  },
+  "per_file": {
+    "crates/greentic-i18n-lib/src/lib.rs": {
+      "line_coverage_min": 80.0
+    },
+    "crates/greentic-i18n-translator/src/cli.rs": {
+      "line_coverage_min": 80.0
+    },
+    "crates/greentic-i18n-translator/src/provider/codex_cli.rs": {
+      "line_coverage_min": 75.0
+    },
+    "crates/greentic-i18n-translator/src/state.rs": {
+      "line_coverage_min": 85.0
+    },
+    "crates/greentic-i18n-translator/src/validate.rs": {
+      "line_coverage_min": 90.0
+    }
+  }
+}

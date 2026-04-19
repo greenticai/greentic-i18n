@@ -4,7 +4,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::time::{SystemTime, UNIX_EPOCH};
 
-#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct TranslatorState {
     #[serde(default = "default_version")]
     pub version: u32,
@@ -28,6 +28,15 @@ pub struct KeyState {
 
 fn default_version() -> u32 {
     1
+}
+
+impl Default for TranslatorState {
+    fn default() -> Self {
+        Self {
+            version: default_version(),
+            langs: BTreeMap::new(),
+        }
+    }
 }
 
 pub fn hash_text(value: &str) -> String {
@@ -128,5 +137,76 @@ impl TranslatorState {
         }
 
         lang_state.keys.len().saturating_sub(before)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{TranslatorState, hash_text};
+    use std::collections::BTreeMap;
+    use std::fs;
+    use std::path::{Path, PathBuf};
+    use std::time::{SystemTime, UNIX_EPOCH};
+
+    fn unique_temp_dir(name: &str) -> PathBuf {
+        let stamp = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .expect("valid system clock")
+            .as_nanos();
+        std::env::temp_dir().join(format!("gt-i18n-state-{name}-{stamp}"))
+    }
+
+    #[test]
+    fn default_path_points_to_repo_i18n_state_file() {
+        assert_eq!(
+            TranslatorState::default_path(Path::new("/repo")),
+            Path::new("/repo/.i18n/translator-state.json")
+        );
+    }
+
+    #[test]
+    fn load_missing_file_returns_default_state() {
+        let path = unique_temp_dir("missing").join("missing.json");
+        let state = TranslatorState::load(&path).expect("missing file should yield default state");
+        assert_eq!(state.version, 1);
+        assert!(state.langs.is_empty());
+    }
+
+    #[test]
+    fn save_and_load_round_trip_state() {
+        let dir = unique_temp_dir("roundtrip");
+        let path = dir.join("translator-state.json");
+        let mut state = TranslatorState::default();
+        state.set_key_state(
+            "fr",
+            "hello",
+            hash_text("Hello"),
+            hash_text("Bonjour"),
+            "codex-cli",
+        );
+
+        state.save(&path).expect("state should save");
+        let loaded = TranslatorState::load(&path).expect("state should load");
+        let key_state = loaded
+            .key_state("fr", "hello")
+            .expect("saved key state should exist");
+        assert_eq!(key_state.engine, "codex-cli");
+
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn backfill_only_adds_keys_that_exist_in_translation_map() {
+        let mut state = TranslatorState::default();
+        let mut en_map = BTreeMap::new();
+        en_map.insert("hello".to_string(), "Hello".to_string());
+        en_map.insert("bye".to_string(), "Bye".to_string());
+        let mut tr_map = BTreeMap::new();
+        tr_map.insert("hello".to_string(), "Bonjour".to_string());
+
+        let added = state.backfill_missing_keys_from_maps("fr", &en_map, &tr_map, "codex-cli");
+        assert_eq!(added, 1);
+        assert!(state.key_state("fr", "hello").is_some());
+        assert!(state.key_state("fr", "bye").is_none());
     }
 }

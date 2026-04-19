@@ -32,39 +32,13 @@ jobs:
       - name: Install Codex CLI
         run: npm install -g @openai/codex
 
-      - name: Skip when no i18n baseline
-        id: baseline
-        shell: bash
-        run: |
-          if [[ ! -f i18n/en.json ]]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          LANGS=$(find i18n -maxdepth 1 -type f -name '*.json' -printf '%f\n' \
-            | sed -E 's/\.json$//' \
-            | grep -v '^en$' \
-            | sort \
-            | paste -sd, -)
-          if [[ -z "$LANGS" ]]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          echo "skip=false" >> "$GITHUB_OUTPUT"
-          echo "langs=$LANGS" >> "$GITHUB_OUTPUT"
-
-      - name: Translate all languages
-        if: steps.baseline.outputs.skip != 'true'
+      - name: Translate all catalog sets
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          cargo run -p greentic-i18n-translator -- \
-            translate \
-            --langs "${{ steps.baseline.outputs.langs }}" \
-            --en i18n/en.json \
-            --auth-mode api-key
+          AUTH_MODE: api-key
+        run: tools/i18n.sh translate
 
       - name: Detect changes
-        if: steps.baseline.outputs.skip != 'true'
         id: changes
         shell: bash
         run: |
@@ -75,7 +49,7 @@ jobs:
           fi
 
       - name: Create translation PR
-        if: steps.baseline.outputs.skip != 'true' && steps.changes.outputs.changed == 'true'
+        if: steps.changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -92,5 +66,5 @@ jobs:
           labels: i18n, automated
 
       - name: No-op
-        if: steps.baseline.outputs.skip == 'true' || steps.changes.outputs.changed == 'false'
+        if: steps.changes.outputs.changed == 'false'
         run: echo "No translation diff detected (or i18n baseline missing)."

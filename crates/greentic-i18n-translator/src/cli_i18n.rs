@@ -151,3 +151,33 @@ fn format_template(template: &str, args: &[&str]) -> String {
     out.push_str(&template[i..]);
     out
 }
+
+#[cfg(test)]
+mod tests {
+    use super::{CliI18n, format_template, normalize_locale};
+
+    #[test]
+    fn normalize_locale_strips_encoding_and_normalizes_separator() {
+        assert_eq!(normalize_locale(" nl_NL.UTF-8 "), Some("nl-NL".to_string()));
+        assert_eq!(normalize_locale(""), None);
+    }
+
+    #[test]
+    fn from_request_falls_back_to_english_for_unknown_locale() {
+        let fallback = CliI18n::from_request(Some("zz-ZZ")).expect("fallback locale should load");
+        let english = CliI18n::from_request(Some("en")).expect("english locale should load");
+        assert_eq!(
+            fallback.t("cli.help.command.status"),
+            english.t("cli.help.command.status")
+        );
+    }
+
+    #[test]
+    fn format_template_replaces_placeholders_in_order() {
+        assert_eq!(
+            format_template("hello {}, {}{}", &["world", "a", "b"]),
+            "hello world, ab"
+        );
+        assert_eq!(format_template("hello {}", &[]), "hello {}");
+    }
+}

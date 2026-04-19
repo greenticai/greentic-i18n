@@ -18,4 +18,9 @@ data-encoding = { workspace = true }
 icu4x = []
 
 [dev-dependencies]
+criterion = "0.5"
 serde_json = { workspace = true }
+
+[[bench]]
+name = "perf"
+harness = false
