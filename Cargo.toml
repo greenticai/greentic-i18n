@@ -18,4 +18,4 @@ serde = "1"
 blake3 = "1"
 data-encoding = "2"
 clap = "4"
-greentic-i18n-lib = { path = "crates/greentic-i18n-lib" }
+greentic-i18n-lib = { version = "0.5", path = "crates/greentic-i18n-lib" }
