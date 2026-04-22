@@ -7,7 +7,7 @@ use std::{
     collections::{HashMap, VecDeque},
     fmt,
     str::FromStr,
-    sync::{Arc, Mutex},
+    sync::{Arc, RwLock},
 };
 
 use blake3::Hasher;
@@ -355,7 +355,7 @@ impl I18nResolver for DefaultResolver {
 
 pub struct I18n {
     resolver: Arc<dyn I18nResolver>,
-    cache: Mutex<I18nCache>,
+    cache: RwLock<I18nCache>,
 }
 
 impl I18n {
@@ -366,7 +366,7 @@ impl I18n {
     pub fn new_with_config(resolver: Arc<dyn I18nResolver>, config: I18nCacheConfig) -> Self {
         Self {
             resolver,
-            cache: Mutex::new(I18nCache::new(config)),
+            cache: RwLock::new(I18nCache::new(config)),
         }
     }
 
@@ -375,11 +375,11 @@ impl I18n {
     }
 
     pub fn get(&self, id: &I18nId) -> Option<Arc<I18nProfile>> {
-        self.cache.lock().unwrap().get(id)
+        self.cache.read().unwrap().get(id)
     }
 
     pub fn get_with_fallback(&self, id: &I18nId) -> Option<I18nCacheSnapshot> {
-        self.cache.lock().unwrap().get_snapshot(id)
+        self.cache.read().unwrap().get_snapshot(id)
     }
 
     pub fn insert(&self, profile: I18nProfile, fallback_chain: Vec<I18nTag>) -> I18nId {
@@ -390,7 +390,7 @@ impl I18n {
             profile: Arc::new(stored),
             fallback_chain,
         };
-        self.cache.lock().unwrap().insert(id, entry);
+        self.cache.write().unwrap().insert(id, entry);
         id
     }
 
@@ -400,7 +400,7 @@ impl I18n {
             profile: Arc::new(resolution.profile.clone()),
             fallback_chain: resolution.fallback_chain.clone(),
         };
-        self.cache.lock().unwrap().insert(resolution.id, entry);
+        self.cache.write().unwrap().insert(resolution.id, entry);
         Ok(resolution)
     }
 }
@@ -462,7 +462,9 @@ pub struct I18nCacheSnapshot {
 
 pub struct I18nCache {
     entries: HashMap<I18nId, I18nCacheEntry>,
-    order: VecDeque<I18nId>,
+    order: VecDeque<(I18nId, u64)>,
+    recent: HashMap<I18nId, u64>,
+    next_touch: u64,
     config: I18nCacheConfig,
 }
 
@@ -476,48 +478,47 @@ impl I18nCache {
         Self {
             entries: HashMap::new(),
             order: VecDeque::new(),
+            recent: HashMap::new(),
+            next_touch: 0,
             config: I18nCacheConfig { max_entries },
         }
     }
 
     fn insert(&mut self, id: I18nId, entry: I18nCacheEntry) {
-        self.touch(&id);
         self.entries.insert(id, entry);
+        self.touch(&id);
         self.evict_if_needed();
     }
 
-    fn get(&mut self, id: &I18nId) -> Option<Arc<I18nProfile>> {
-        if self.entries.contains_key(id) {
-            self.touch(id);
-            return self.entries.get(id).map(|entry| entry.profile.clone());
-        }
-        None
+    fn get(&self, id: &I18nId) -> Option<Arc<I18nProfile>> {
+        self.entries.get(id).map(|entry| entry.profile.clone())
     }
 
-    fn get_snapshot(&mut self, id: &I18nId) -> Option<I18nCacheSnapshot> {
-        if self.entries.contains_key(id) {
-            self.touch(id);
-            if let Some(entry) = self.entries.get(id) {
-                return Some(I18nCacheSnapshot {
-                    profile: entry.profile.clone(),
-                    fallback_chain: entry.fallback_chain.clone(),
-                });
-            }
-        }
-        None
+    fn get_snapshot(&self, id: &I18nId) -> Option<I18nCacheSnapshot> {
+        let entry = self.entries.get(id)?;
+        Some(I18nCacheSnapshot {
+            profile: entry.profile.clone(),
+            fallback_chain: entry.fallback_chain.clone(),
+        })
     }
 
     fn touch(&mut self, id: &I18nId) {
-        if let Some(pos) = self.order.iter().position(|existing| existing == id) {
-            self.order.remove(pos);
-        }
-        self.order.push_back(*id);
+        self.next_touch = self.next_touch.wrapping_add(1);
+        self.recent.insert(*id, self.next_touch);
+        self.order.push_back((*id, self.next_touch));
     }
 
     fn evict_if_needed(&mut self) {
         while self.entries.len() > self.config.max_entries {
-            if let Some(evicted) = self.order.pop_front() {
-                self.entries.remove(&evicted);
+            if let Some((evicted, seen_at)) = self.order.pop_front() {
+                let is_current = self
+                    .recent
+                    .get(&evicted)
+                    .is_some_and(|current| *current == seen_at);
+                if is_current {
+                    self.entries.remove(&evicted);
+                    self.recent.remove(&evicted);
+                }
             }
         }
     }
@@ -906,6 +907,43 @@ mod tests {
         assert!(engine.get(&first).is_none());
         assert!(engine.get(&second).is_some());
         assert!(engine.get(&third).is_some());
+    }
+
+    #[test]
+    fn cache_retains_most_recent_inserts() {
+        let resolver = DefaultResolver::default();
+        let engine = I18n::new_with_config(Arc::new(resolver), I18nCacheConfig { max_entries: 2 });
+        let first = engine
+            .resolve_and_cache(I18nRequest::new(
+                Some(normalize_tag("en-US").unwrap()),
+                None,
+            ))
+            .unwrap()
+            .id;
+        let second = engine
+            .resolve_and_cache(I18nRequest::new(
+                Some(normalize_tag("fr-FR").unwrap()),
+                None,
+            ))
+            .unwrap()
+            .id;
+        let third = engine
+            .resolve_and_cache(I18nRequest::new(
+                Some(normalize_tag("ar-OM").unwrap()),
+                None,
+            ))
+            .unwrap()
+            .id;
+
+        assert!(
+            engine.get(&first).is_none(),
+            "oldest entry should be evicted"
+        );
+        assert!(
+            engine.get(&second).is_some(),
+            "second entry should be retained"
+        );
+        assert!(engine.get(&third).is_some(), "new entry should be retained");
     }
 
     #[test]

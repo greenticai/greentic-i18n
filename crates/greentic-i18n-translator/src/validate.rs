@@ -131,9 +131,10 @@ pub fn validate_lang_map(en_map: &JsonMap, tr_map: &JsonMap) -> Vec<ValidationIs
 #[cfg(test)]
 mod tests {
     use super::{
-        ValidationError, count_newlines_normalized, count_placeholders_positional,
-        extract_backtick_spans, validate_translation,
+        ValidationError, ValidationIssue, count_newlines_normalized, count_placeholders_positional,
+        extract_backtick_spans, validate_lang_map, validate_translation,
     };
+    use crate::json_map::JsonMap;
 
     #[test]
     fn placeholder_mismatch_fails() {
@@ -181,6 +182,31 @@ mod tests {
         assert_eq!(
             extract_backtick_spans("do `cmd --x` and `cmd --y`"),
             vec!["cmd --x".to_string(), "cmd --y".to_string()]
+        );
+    }
+
+    #[test]
+    fn empty_translation_is_rejected_for_non_empty_english() {
+        let err = validate_translation("hello", "").expect_err("empty translation should fail");
+        assert_eq!(err, ValidationError::EmptyTranslationNotAllowed);
+        assert_eq!(
+            err.message(),
+            "translation is empty while English source is non-empty"
+        );
+    }
+
+    #[test]
+    fn validate_lang_map_reports_missing_keys() {
+        let mut en_map = JsonMap::new();
+        en_map.insert("hello".to_string(), "Hello".to_string());
+        let tr_map = JsonMap::new();
+
+        assert_eq!(
+            validate_lang_map(&en_map, &tr_map),
+            vec![ValidationIssue {
+                key: "hello".to_string(),
+                error: ValidationError::MissingKey,
+            }]
         );
     }
 }

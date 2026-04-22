@@ -243,8 +243,90 @@ impl TranslatorProvider for CodexCliProvider {
 
 #[cfg(test)]
 mod tests {
-    use super::CodexCliProvider;
+    use super::{AuthMode, CodexCliConfig, CodexCliProvider};
     use crate::json_map::JsonMap;
+    use crate::provider::TranslatorProvider;
+    use crate::test_env_lock;
+    use std::fs;
+    use std::path::PathBuf;
+    use std::time::{SystemTime, UNIX_EPOCH};
+
+    fn set_env<K: AsRef<std::ffi::OsStr>, V: AsRef<std::ffi::OsStr>>(key: K, value: V) {
+        unsafe {
+            std::env::set_var(key, value);
+        }
+    }
+
+    fn remove_env<K: AsRef<std::ffi::OsStr>>(key: K) {
+        unsafe {
+            std::env::remove_var(key);
+        }
+    }
+
+    fn temp_dir(name: &str) -> PathBuf {
+        let stamp = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .expect("valid system clock")
+            .as_nanos();
+        std::env::temp_dir().join(format!("gt-codex-provider-{name}-{stamp}"))
+    }
+
+    fn install_codex_stub(dir: &PathBuf) -> PathBuf {
+        fs::create_dir_all(dir).expect("stub dir should exist");
+        let path = dir.join("codex");
+        fs::write(
+            &path,
+            r#"#!/usr/bin/env bash
+set -euo pipefail
+mode="${CODEX_STUB_MODE:-}"
+case "$1 ${2:-}" in
+  "login status")
+    [[ "$mode" == "status-ok" ]] && exit 0
+    exit 1
+    ;;
+  "login --device-auth")
+    [[ "$mode" == "device-ok" ]] && exit 0
+    echo "device failed" >&2
+    exit 1
+    ;;
+  "login --with-api-key")
+    read -r key
+    [[ -n "$CODEX_STUB_CAPTURE_FILE" ]] && printf '%s' "$key" > "$CODEX_STUB_CAPTURE_FILE"
+    [[ "$mode" == "api-ok" ]] && exit 0
+    echo "api failed" >&2
+    exit 1
+    ;;
+  "login ")
+    [[ "$mode" == "browser-ok" ]] && exit 0
+    echo "browser failed" >&2
+    exit 1
+    ;;
+  *)
+    if [[ "$1" == "exec" ]]; then
+      if [[ -n "${CODEX_STUB_EXEC_OUTPUT:-}" ]]; then
+        printf '%s\n' "$CODEX_STUB_EXEC_OUTPUT"
+      else
+        printf '%s\n' '{"k":"translated"}'
+      fi
+      exit 0
+    else
+      echo "unexpected invocation: $*" >&2
+      exit 1
+    fi
+    ;;
+esac
+"#,
+        )
+        .expect("stub should write");
+        #[cfg(unix)]
+        {
+            use std::os::unix::fs::PermissionsExt;
+            let mut perms = fs::metadata(&path).expect("metadata").permissions();
+            perms.set_mode(0o755);
+            fs::set_permissions(&path, perms).expect("permissions");
+        }
+        path
+    }
 
     #[test]
     fn prompt_builder_contains_validation_rules() {
@@ -274,5 +356,102 @@ mod tests {
         assert!(prompt.contains("CLI => CLI"));
         assert!(prompt.contains("Previous output failed validation"));
         assert!(prompt.contains("bad output"));
+    }
+
+    #[test]
+    fn ensure_auth_uses_status_when_already_logged_in() {
+        let _guard = test_env_lock()
+            .lock()
+            .unwrap_or_else(|err| err.into_inner());
+        let dir = temp_dir("status");
+        install_codex_stub(&dir);
+        let old_path = std::env::var("PATH").unwrap_or_default();
+        set_env("PATH", format!("{}:{}", dir.display(), old_path));
+        set_env("CODEX_STUB_MODE", "status-ok");
+
+        let provider = CodexCliProvider::new(CodexCliConfig {
+            auth_mode: AuthMode::Auto,
+            codex_home: None,
+            api_key_stdin: false,
+        });
+        provider
+            .ensure_auth()
+            .expect("status-based auth should succeed");
+
+        set_env("PATH", old_path);
+        remove_env("CODEX_STUB_MODE");
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn ensure_auth_falls_back_to_api_key_mode() {
+        let _guard = test_env_lock()
+            .lock()
+            .unwrap_or_else(|err| err.into_inner());
+        let dir = temp_dir("api-key");
+        let capture = dir.join("captured-key.txt");
+        install_codex_stub(&dir);
+        let old_path = std::env::var("PATH").unwrap_or_default();
+        let old_key = std::env::var("OPENAI_API_KEY").ok();
+        set_env("PATH", format!("{}:{}", dir.display(), old_path));
+        set_env("OPENAI_API_KEY", "secret-key");
+        set_env("CODEX_STUB_MODE", "api-ok");
+        set_env("CODEX_STUB_CAPTURE_FILE", &capture);
+
+        let provider = CodexCliProvider::new(CodexCliConfig {
+            auth_mode: AuthMode::Auto,
+            codex_home: None,
+            api_key_stdin: true,
+        });
+        provider
+            .ensure_auth()
+            .expect("api-key fallback auth should succeed");
+        assert_eq!(
+            fs::read_to_string(&capture).expect("captured key should exist"),
+            "secret-key"
+        );
+
+        set_env("PATH", old_path);
+        if let Some(key) = old_key {
+            set_env("OPENAI_API_KEY", key);
+        } else {
+            remove_env("OPENAI_API_KEY");
+        }
+        remove_env("CODEX_STUB_MODE");
+        remove_env("CODEX_STUB_CAPTURE_FILE");
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn translate_batch_uses_codex_exec_output() {
+        let _guard = test_env_lock()
+            .lock()
+            .unwrap_or_else(|err| err.into_inner());
+        let dir = temp_dir("exec");
+        install_codex_stub(&dir);
+        let old_path = std::env::var("PATH").unwrap_or_default();
+        set_env("PATH", format!("{}:{}", dir.display(), old_path));
+        set_env("CODEX_STUB_EXEC_OUTPUT", "{\"k\":\"Bonjour\"}");
+
+        let provider = CodexCliProvider::new(CodexCliConfig {
+            auth_mode: AuthMode::Browser,
+            codex_home: None,
+            api_key_stdin: false,
+        });
+        let translated = provider
+            .translate_batch("fr", &[("k".to_string(), "Hello".to_string())], None, None)
+            .expect("translate_batch should parse codex output");
+        assert_eq!(translated.get("k"), Some(&"Bonjour".to_string()));
+
+        set_env("PATH", old_path);
+        remove_env("CODEX_STUB_EXEC_OUTPUT");
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn parse_json_response_rejects_non_string_values() {
+        let err = CodexCliProvider::parse_translation_response("{\"hello\":1}")
+            .expect_err("non-string values should fail");
+        assert!(err.contains("provider key `hello` is not a string"));
     }
 }

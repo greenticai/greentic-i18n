@@ -1,0 +1,34 @@
+name: Perf (lightweight)
+# Moved off pull_request onto a nightly schedule. See plans/binary-bifurcation.md
+# Phase A (heavy-job sweep). Manual runs remain via workflow_dispatch. push
+# trigger preserved so main-merge still catches regressions immediately.
+
+on:
+  schedule:
+    - cron: "34 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: perf-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  perf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@1.95.0
+
+      - name: Run perf guard tests
+        run: cargo test -p greentic-i18n-lib --test perf_scaling --test perf_timeout
+
+      - name: Run benchmark smoke
+        run: cargo bench -p greentic-i18n-lib --bench perf -- --sample-size 10

@@ -861,16 +861,23 @@ fn print_translate_help(i18n: &CliI18n) {
 #[cfg(test)]
 mod tests {
     use super::{
-        backfill_state_from_existing_translation, glossary_version, status_for_lang,
-        translate_map_with_provider,
+        Cli, CliAuthMode, Command, HelpTarget, backfill_state_from_existing_translation,
+        glossary_version, has_fresh_bot_translation, has_manual_override, help_target_from_args,
+        lang_path_for, print_diff_help, print_status_help, print_top_level_help,
+        print_translate_help, print_validate_help, requested_locale_from_args, resolve_langs,
+        run_with, status_for_lang, translate_map_with_provider, validate_batch,
     };
     use crate::cache::CacheStore;
+    use crate::cli_i18n::CliI18n;
     use crate::json_map::JsonMap;
     use crate::provider::TranslatorProvider;
     use crate::state::{TranslatorState, hash_text};
+    use crate::test_env_lock;
+    use crate::validate::{ValidationError, ValidationIssue};
     use std::cell::Cell;
+    use std::env;
     use std::fs;
-    use std::path::PathBuf;
+    use std::path::{Path, PathBuf};
     use std::time::{SystemTime, UNIX_EPOCH};
 
     struct MockProvider {
@@ -915,6 +922,50 @@ mod tests {
             .expect("valid system clock")
             .as_nanos();
         std::env::temp_dir().join(format!("gt-i18n-cache-{name}-{stamp}"))
+    }
+
+    fn set_env<K: AsRef<std::ffi::OsStr>, V: AsRef<std::ffi::OsStr>>(key: K, value: V) {
+        unsafe {
+            env::set_var(key, value);
+        }
+    }
+
+    fn remove_env<K: AsRef<std::ffi::OsStr>>(key: K) {
+        unsafe {
+            env::remove_var(key);
+        }
+    }
+
+    fn install_translate_stub(dir: &Path) {
+        let path = dir.join("codex");
+        fs::write(
+            &path,
+            r#"#!/usr/bin/env bash
+set -euo pipefail
+if [[ "$1" == "login" && "${2:-}" == "--with-api-key" ]]; then
+  read -r _
+  exit 0
+fi
+if [[ "$1" == "exec" ]]; then
+  if [[ -n "${CODEX_TEST_EXEC_OUTPUT:-}" ]]; then
+    printf '%s\n' "$CODEX_TEST_EXEC_OUTPUT"
+  else
+    printf '%s\n' '{"hello":"Bonjour"}'
+  fi
+  exit 0
+fi
+echo "unexpected invocation: $*" >&2
+exit 1
+"#,
+        )
+        .expect("stub should write");
+        #[cfg(unix)]
+        {
+            use std::os::unix::fs::PermissionsExt;
+            let mut perms = fs::metadata(&path).expect("metadata").permissions();
+            perms.set_mode(0o755);
+            fs::set_permissions(&path, perms).expect("permissions");
+        }
     }
 
     #[test]
@@ -1098,5 +1149,320 @@ mod tests {
             key_state.last_bot_translation_hash,
             hash_text("Bonjour bot")
         );
+    }
+
+    #[test]
+    fn requested_locale_from_args_supports_both_forms() {
+        assert_eq!(
+            requested_locale_from_args(&[
+                "bin".to_string(),
+                "--locale".to_string(),
+                "nl".to_string(),
+            ]),
+            Some("nl".to_string())
+        );
+        assert_eq!(
+            requested_locale_from_args(&["bin".to_string(), "--locale=fi".to_string()]),
+            Some("fi".to_string())
+        );
+    }
+
+    #[test]
+    fn help_target_skips_locale_flags_and_finds_command() {
+        assert!(matches!(
+            help_target_from_args(&[
+                "bin".to_string(),
+                "--locale".to_string(),
+                "nl".to_string(),
+                "status".to_string(),
+                "--help".to_string(),
+            ]),
+            HelpTarget::Status
+        ));
+        assert!(matches!(
+            help_target_from_args(&["bin".to_string(), "translate".to_string()]),
+            HelpTarget::Translate
+        ));
+    }
+
+    #[test]
+    fn resolve_langs_handles_all_and_explicit_lists() {
+        let dir = temp_cache_dir("langs");
+        fs::create_dir_all(&dir).expect("dir should exist");
+        fs::write(dir.join("en.json"), "{}\n").expect("write should work");
+        fs::write(dir.join("fr.json"), "{}\n").expect("write should work");
+        fs::write(dir.join("de.json"), "{}\n").expect("write should work");
+
+        let resolved = resolve_langs("all", &dir.join("en.json")).expect("all should resolve");
+        assert_eq!(resolved, vec!["de".to_string(), "fr".to_string()]);
+        assert_eq!(
+            resolve_langs("fr, de ,", &dir.join("en.json")).expect("explicit list should parse"),
+            vec!["fr".to_string(), "de".to_string()]
+        );
+
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn lang_path_for_uses_sibling_json_file() {
+        assert_eq!(
+            lang_path_for(Path::new("en.json"), "fr").expect("sibling path should resolve"),
+            Path::new("fr.json")
+        );
+    }
+
+    #[test]
+    fn manual_and_fresh_helpers_detect_state_correctly() {
+        let mut out = JsonMap::new();
+        out.insert("hello".to_string(), "Bonjour manuel".to_string());
+
+        let mut state = TranslatorState::default();
+        state.set_key_state(
+            "fr",
+            "hello",
+            hash_text("Hello"),
+            hash_text("Bonjour bot"),
+            "codex-cli",
+        );
+
+        assert!(has_manual_override("fr", "hello", "Hello", &out, &state));
+        assert!(!has_fresh_bot_translation(
+            "fr", "hello", "Hello", &out, &state
+        ));
+
+        out.insert("hello".to_string(), "Bonjour bot".to_string());
+        assert!(has_fresh_bot_translation(
+            "fr", "hello", "Hello", &out, &state
+        ));
+    }
+
+    #[test]
+    fn validate_batch_reports_missing_and_unexpected_keys() {
+        let items = vec![("hello".to_string(), "Hello {}".to_string())];
+        let mut translated = JsonMap::new();
+        translated.insert("extra".to_string(), "oops".to_string());
+        let err = validate_batch(&items, &translated).expect_err("invalid batch should fail");
+        assert!(err.contains("missing key `hello`"));
+        assert!(err.contains("unexpected key `extra`"));
+    }
+
+    #[test]
+    fn glossary_version_changes_when_glossary_changes() {
+        let mut glossary = JsonMap::new();
+        glossary.insert("CLI".to_string(), "CLI".to_string());
+        let first = glossary_version(Some(&glossary)).expect("version should hash");
+        glossary.insert("Pack".to_string(), "Pack".to_string());
+        let second = glossary_version(Some(&glossary)).expect("version should hash");
+        assert_ne!(first, second);
+    }
+
+    struct FlakyProvider {
+        calls: Cell<usize>,
+    }
+
+    impl FlakyProvider {
+        fn new() -> Self {
+            Self {
+                calls: Cell::new(0),
+            }
+        }
+    }
+
+    impl TranslatorProvider for FlakyProvider {
+        fn ensure_auth(&self) -> Result<(), String> {
+            Ok(())
+        }
+
+        fn translate_batch(
+            &self,
+            _lang: &str,
+            items: &[(String, String)],
+            _glossary: Option<&JsonMap>,
+            _retry_feedback: Option<&str>,
+        ) -> Result<JsonMap, String> {
+            self.calls.set(self.calls.get() + 1);
+            let mut out = JsonMap::new();
+            for (key, _) in items {
+                if self.calls.get() == 1 {
+                    out.insert(key.clone(), "broken".to_string());
+                } else {
+                    out.insert(key.clone(), format!("translated:{key} {{}}"));
+                }
+            }
+            Ok(out)
+        }
+    }
+
+    #[test]
+    fn translate_retries_after_validation_failure() {
+        let provider = FlakyProvider::new();
+        let mut en = JsonMap::new();
+        en.insert("hello".to_string(), "Hello {}".to_string());
+        let cache_dir = temp_cache_dir("retry");
+        let cache = CacheStore::new(cache_dir.clone());
+        let glossary_version = glossary_version(None).expect("glossary version");
+        let (out, outcome) = translate_map_with_provider(
+            &provider,
+            "fr",
+            &en,
+            JsonMap::new(),
+            None,
+            &glossary_version,
+            10,
+            1,
+            &cache,
+            &mut TranslatorState::default(),
+            false,
+        )
+        .expect("retry should eventually succeed");
+        assert_eq!(provider.calls.get(), 2);
+        assert_eq!(outcome.translated, 1);
+        assert_eq!(out.get("hello"), Some(&"translated:hello {}".to_string()));
+        let _ = fs::remove_dir_all(cache_dir);
+    }
+
+    #[test]
+    fn help_printers_render_without_panic() {
+        let i18n = CliI18n::from_request(Some("en")).expect("i18n should load");
+        print_top_level_help(&i18n);
+        print_diff_help(&i18n);
+        print_validate_help(&i18n);
+        print_status_help(&i18n);
+        print_translate_help(&i18n);
+    }
+
+    #[test]
+    fn run_with_validate_status_and_diff_succeed() {
+        let _guard = test_env_lock()
+            .lock()
+            .unwrap_or_else(|err| err.into_inner());
+        let workspace = temp_cache_dir("run-with");
+        let i18n_dir = workspace.join("i18n");
+        fs::create_dir_all(&i18n_dir).expect("i18n dir should exist");
+        fs::create_dir_all(workspace.join(".i18n")).expect("state dir should exist");
+        fs::write(i18n_dir.join("en.json"), "{\n  \"hello\": \"Hello\"\n}\n").expect("write");
+        fs::write(i18n_dir.join("fr.json"), "{\n  \"hello\": \"Bonjour\"\n}\n").expect("write");
+        let old_cwd = env::current_dir().expect("cwd should exist");
+        env::set_current_dir(&workspace).expect("should enter temp workspace");
+
+        let i18n = CliI18n::from_request(Some("en")).expect("i18n should load");
+        run_with(
+            Cli {
+                locale: Some("en".to_string()),
+                command: Command::Validate {
+                    langs: "fr".to_string(),
+                    en: i18n_dir.join("en.json"),
+                },
+            },
+            &i18n,
+        )
+        .expect("validate should succeed");
+
+        run_with(
+            Cli {
+                locale: Some("en".to_string()),
+                command: Command::Status {
+                    langs: "fr".to_string(),
+                    en: i18n_dir.join("en.json"),
+                },
+            },
+            &i18n,
+        )
+        .expect("status should succeed after backfill");
+
+        let report = run_with(
+            Cli {
+                locale: Some("en".to_string()),
+                command: Command::Diff {
+                    base: "HEAD".to_string(),
+                    head: "HEAD".to_string(),
+                    en: i18n_dir.join("en.json"),
+                },
+            },
+            &i18n,
+        );
+        assert!(report.is_err(), "diff should fail outside a git repo");
+
+        env::set_current_dir(old_cwd).expect("should restore cwd");
+        let _ = fs::remove_dir_all(workspace);
+    }
+
+    #[test]
+    fn run_with_translate_updates_language_file_and_state() {
+        let _guard = test_env_lock()
+            .lock()
+            .unwrap_or_else(|err| err.into_inner());
+        let workspace = temp_cache_dir("run-translate");
+        let i18n_dir = workspace.join("i18n");
+        fs::create_dir_all(&i18n_dir).expect("i18n dir should exist");
+        fs::write(i18n_dir.join("en.json"), "{\n  \"hello\": \"Hello\"\n}\n").expect("write");
+        fs::write(i18n_dir.join("fr.json"), "{}\n").expect("write");
+        install_translate_stub(&workspace);
+
+        let old_cwd = env::current_dir().expect("cwd should exist");
+        let old_path = env::var("PATH").unwrap_or_default();
+        let old_key = env::var("OPENAI_API_KEY").ok();
+        env::set_current_dir(&workspace).expect("should enter temp workspace");
+        set_env("PATH", format!("{}:{}", workspace.display(), old_path));
+        set_env("OPENAI_API_KEY", "secret-key");
+        set_env("CODEX_TEST_EXEC_OUTPUT", "{\"hello\":\"Bonjour\"}");
+
+        let i18n = CliI18n::from_request(Some("en")).expect("i18n should load");
+        run_with(
+            Cli {
+                locale: Some("en".to_string()),
+                command: Command::Translate {
+                    langs: "fr".to_string(),
+                    en: i18n_dir.join("en.json"),
+                    auth_mode: CliAuthMode::ApiKey,
+                    codex_home: None,
+                    batch_size: 10,
+                    max_retries: 0,
+                    glossary: None,
+                    api_key_stdin: true,
+                    overwrite_manual: false,
+                    cache_dir: Some(workspace.join(".cache")),
+                },
+            },
+            &i18n,
+        )
+        .expect("translate should succeed");
+
+        let fr =
+            fs::read_to_string(i18n_dir.join("fr.json")).expect("translated file should exist");
+        assert!(fr.contains("Bonjour"));
+        let state = TranslatorState::load(&workspace.join(".i18n/translator-state.json"))
+            .expect("state should load");
+        assert!(state.key_state("fr", "hello").is_some());
+
+        env::set_current_dir(old_cwd).expect("should restore cwd");
+        set_env("PATH", old_path);
+        if let Some(key) = old_key {
+            set_env("OPENAI_API_KEY", key);
+        } else {
+            remove_env("OPENAI_API_KEY");
+        }
+        remove_env("CODEX_TEST_EXEC_OUTPUT");
+        let _ = fs::remove_dir_all(workspace);
+    }
+
+    #[test]
+    fn validate_batch_surfaces_validation_message() {
+        let items = vec![("hello".to_string(), "Hello".to_string())];
+        let mut translated = JsonMap::new();
+        translated.insert("hello".to_string(), "".to_string());
+        let err = validate_batch(&items, &translated).expect_err("empty translation should fail");
+        assert!(err.contains(&ValidationError::EmptyTranslationNotAllowed.message()));
+        assert_eq!(
+            validate_batch(&items, &translated),
+            Err(format!(
+                "key `hello`: {}",
+                ValidationError::EmptyTranslationNotAllowed.message()
+            ))
+        );
+        let _issue = ValidationIssue {
+            key: "hello".to_string(),
+            error: ValidationError::EmptyTranslationNotAllowed,
+        };
     }
 }
