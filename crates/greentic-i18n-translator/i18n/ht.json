@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "pa gen okenn lang sib ki rezoud",
   "cli.help.command.diff": "Konpare kle ant ref baz/tèt pou kat sous angle a",
-  "cli.help.command.help": "Afiche mesaj sa a oswa èd sou soukòmand yo bay la",
+  "cli.help.command.help": "Afiche mesaj sa a oswa èd pou soukòmand yo bay la",
   "cli.help.command.status": "Rapòte tradiksyon ki manke oswa ki demode lè w sèvi ak metadone eta tradiktè a",
   "cli.help.command.translate": "Jenere/mete ajou tradiksyon atravè entegrasyon founisè ak sekirite kach/eta",
   "cli.help.command.validate": "Valide fichye lang tradui yo kont envaryan fòma angle",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Opsyon:",
   "cli.help.diff.usage": "Itilizasyon: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Afiche èd",
-  "cli.help.option.locale": "Lokal pou mesaj pandan egzekisyon ak sòti èd pèsonalize",
+  "cli.help.option.locale": "Lokal pou mesaj pandan ekzekisyon ak rezilta èd pèsonalize",
   "cli.help.status.option.en": "Chemen pou fichye JSON kat sous angle a",
   "cli.help.status.option.langs": "Lis lang separe pa vigil, oswa `all`",
   "cli.help.status.options": "Opsyon:",

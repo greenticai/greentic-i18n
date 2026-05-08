@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "nu s-au determinat limbi țintă",
   "cli.help.command.diff": "Compară cheile între referințele base/head pentru harta sursă în engleză",
-  "cli.help.command.help": "Afișează acest mesaj sau ajutorul subcomenzii (subcomenzilor) date",
+  "cli.help.command.help": "Afișează acest mesaj sau ajutorul subcomenzii/subcomenzilor date",
   "cli.help.command.status": "Raportează traducerile lipsă sau învechite folosind metadatele de stare ale traducătorului",
   "cli.help.command.translate": "Generează/actualizează traduceri prin integrarea cu furnizorul, cu siguranță pentru cache/stare",
   "cli.help.command.validate": "Validează fișierele de limbă traduse față de invariantele de format în engleză",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Opțiuni:",
   "cli.help.diff.usage": "Utilizare: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Afișează ajutorul",
-  "cli.help.option.locale": "Limbă pentru mesajele la rulare și ieșirea de ajutor personalizată",
+  "cli.help.option.locale": "Limba pentru mesajele de execuție și ieșirea personalizată de ajutor",
   "cli.help.status.option.en": "Calea către fișierul JSON al hărții sursă în engleză",
   "cli.help.status.option.langs": "Listă de limbi separată prin virgulă sau `all`",
   "cli.help.status.options": "Opțiuni:",

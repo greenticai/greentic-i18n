@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Alternativer:",
   "cli.help.diff.usage": "Bruk: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Skriv ut hjelp",
-  "cli.help.option.locale": "Lokale for kjøretidsmeldinger og tilpasset hjelpeutdata",
+  "cli.help.option.locale": "Språkinnstilling for kjøretidsmeldinger og egendefinert hjelpeutdata",
   "cli.help.status.option.en": "Sti til den engelske kildekart-JSON-filen",
   "cli.help.status.option.langs": "Kommaseparert språkliste, eller `all`",
   "cli.help.status.options": "Alternativer:",

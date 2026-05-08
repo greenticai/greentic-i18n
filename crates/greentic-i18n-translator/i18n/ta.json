@@ -11,7 +11,7 @@
   "cli.help.diff.options": "விருப்பங்கள்:",
   "cli.help.diff.usage": "பயன்பாடு: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "உதவியை அச்சிடு",
-  "cli.help.option.locale": "இயக்கநேரச் செய்திகள் மற்றும் தனிப்பயன் உதவி வெளியீட்டிற்கான locale",
+  "cli.help.option.locale": "இயக்கநேர செய்திகளுக்கும் தனிப்பயன் உதவி வெளியீட்டிற்குமான மொழி அமைவு",
   "cli.help.status.option.en": "ஆங்கில மூல மேப் JSON கோப்பின் பாதை",
   "cli.help.status.option.langs": "கமாவால் பிரிக்கப்பட்ட மொழிப் பட்டியல், அல்லது `all`",
   "cli.help.status.options": "விருப்பங்கள்:",

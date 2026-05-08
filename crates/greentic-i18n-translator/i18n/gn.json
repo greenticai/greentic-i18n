@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "ndaipóri ñe'ẽnguéra ojepytasóva",
   "cli.help.command.diff": "Embojoavy clavekuéra base/head refs apytépe mapa ypykue inglés-pe guarã",
-  "cli.help.command.help": "Emoĩ hag̃ua ko marandu térã pytyvõ subcommand(s) oñeme'ẽvape",
+  "cli.help.command.help": "Ehechauka ko marandu térã subcomando oñeme'ẽva pytyvõ",
   "cli.help.command.status": "Emombe'u ñe'ẽasa okañýva térã itujámava eipurúvo metadata estado traductor rehegua",
   "cli.help.command.translate": "Emoheñói/embohekopyahu ñe'ẽasa proveedor jeike rupive cache/estado ñangareko reheve",
   "cli.help.command.validate": "Emoneĩ hag̃ua marandurenda ñe'ẽasa rehegua inglés formato invariante ndive",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Jeporavorã:",
   "cli.help.diff.usage": "Jeporu: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Ehechauka pytyvõ",
-  "cli.help.option.locale": "Locale marandu runtime rehegua ha pytyvõ ñesẽ myatyrõpyre hag̃ua",
+  "cli.help.option.locale": "Locale marandu runtime-pe g̃uarã ha pytyvõ osẽva personalizado-pe g̃uarã",
   "cli.help.status.option.en": "Tape mapa ypykue inglés JSON marandurenda rehegua",
   "cli.help.status.option.langs": "Ñe'ẽnguéra rysýi coma-pe oñemboja'óva térã `all`",
   "cli.help.status.options": "Jeporavorã:",

@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "tidak ada bahasa target yang terdeteksi",
   "cli.help.command.diff": "Bandingkan kunci antara ref base/head untuk peta sumber bahasa Inggris",
-  "cli.help.command.help": "Cetak pesan ini atau bantuan dari subperintah yang diberikan",
+  "cli.help.command.help": "Cetak pesan ini atau bantuan untuk subperintah yang diberikan",
   "cli.help.command.status": "Laporkan terjemahan yang hilang atau usang menggunakan metadata status penerjemah",
   "cli.help.command.translate": "Buat/perbarui terjemahan melalui integrasi penyedia dengan keamanan cache/status",
   "cli.help.command.validate": "Validasi file bahasa terjemahan terhadap invarian format bahasa Inggris",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Opsi:",
   "cli.help.diff.usage": "Penggunaan: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Cetak bantuan",
-  "cli.help.option.locale": "Locale untuk pesan runtime dan keluaran bantuan kustom",
+  "cli.help.option.locale": "Lokal untuk pesan runtime dan keluaran bantuan khusus",
   "cli.help.status.option.en": "Jalur ke file JSON peta sumber bahasa Inggris",
   "cli.help.status.option.langs": "Daftar bahasa dipisahkan koma, atau `all`",
   "cli.help.status.options": "Opsi:",

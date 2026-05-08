@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "nije razriješen nijedan ciljni jezik",
   "cli.help.command.diff": "Usporedi ključeve između base/head referenci za englesku izvornu mapu",
-  "cli.help.command.help": "Ispiši ovu poruku ili pomoć za zadanu podnaredbu(e)",
+  "cli.help.command.help": "Ispiši ovu poruku ili pomoć za navedene podnaredbe",
   "cli.help.command.status": "Prijavi nedostajuće ili zastarjele prijevode koristeći metapodatke stanja prevoditelja",
   "cli.help.command.translate": "Generiraj/ažuriraj prijevode putem integracije s pružateljem uz sigurnost predmemorije/stanja",
   "cli.help.command.validate": "Validiraj prevedene jezične datoteke prema invarijantama engleskog formata",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Opcije:",
   "cli.help.diff.usage": "Upotreba: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Ispiši pomoć",
-  "cli.help.option.locale": "Lokalizacija za poruke tijekom izvođenja i prilagođeni izlaz pomoći",
+  "cli.help.option.locale": "Lokalizacija za poruke tijekom izvođenja i prilagođeni ispis pomoći",
   "cli.help.status.option.en": "Putanja do JSON datoteke engleske izvorne mape",
   "cli.help.status.option.langs": "Popis jezika odvojen zarezima ili `all`",
   "cli.help.status.options": "Opcije:",
