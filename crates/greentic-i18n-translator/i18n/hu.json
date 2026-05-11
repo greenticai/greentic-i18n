@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Opciók:",
   "cli.help.diff.usage": "Használat: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Súgó kiírása",
-  "cli.help.option.locale": "Területi beállítás futásidejű üzenetekhez és egyéni súgókimenethez",
+  "cli.help.option.locale": "Területi beállítás a futásidejű üzenetekhez és az egyéni súgókimenethez",
   "cli.help.status.option.en": "Az angol forrástérkép JSON fájl elérési útja",
   "cli.help.status.option.langs": "Vesszővel elválasztott nyelvlista, vagy `all`",
   "cli.help.status.options": "Opciók:",

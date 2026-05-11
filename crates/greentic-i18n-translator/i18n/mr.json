@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "कोणतीही लक्ष्य भाषा निश्चित झाली नाही",
   "cli.help.command.diff": "English source map साठी base/head refs मधील keys ची तुलना करा",
-  "cli.help.command.help": "हा संदेश किंवा दिलेल्या subcommand(s) ची मदत छापा",
+  "cli.help.command.help": "हा संदेश किंवा दिलेल्या उपआदेशांची मदत छापा",
   "cli.help.command.status": "translator state metadata वापरून missing किंवा stale translations अहवालित करा",
   "cli.help.command.translate": "cache/state safety सह provider integration द्वारे translations तयार/अद्यतनित करा",
   "cli.help.command.validate": "English format invariants विरुद्ध अनुवादित language files ची पडताळणी करा",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "पर्याय:",
   "cli.help.diff.usage": "वापर: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "मदत छापा",
-  "cli.help.option.locale": "runtime messages आणि custom help output साठी locale",
+  "cli.help.option.locale": "रनटाइम संदेश आणि सानुकूल मदत आउटपुटसाठी लोकेल",
   "cli.help.status.option.en": "English source map JSON file चा path",
   "cli.help.status.option.langs": "स्वल्पविरामाने विभाजित भाषा यादी, किंवा `all`",
   "cli.help.status.options": "पर्याय:",

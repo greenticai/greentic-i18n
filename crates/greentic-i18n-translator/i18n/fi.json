@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "kohdekieliä ei löytynyt",
   "cli.help.command.diff": "Vertaa avaimia base/head-viitteiden välillä englanninkieliselle lähdekartalle",
-  "cli.help.command.help": "Tulosta tämä viesti tai annetun alikomennon ohje",
+  "cli.help.command.help": "Tulosta tämä viesti tai annettujen alikomentojen ohje",
   "cli.help.command.status": "Raportoi puuttuvat tai vanhentuneet käännökset käyttäen kääntäjän tilatietometatietoja",
   "cli.help.command.translate": "Luo/päivitä käännöksiä tarjoajaintegraation kautta välimuisti-/tilaturvallisesti",
   "cli.help.command.validate": "Validoi käännetyt kielitiedostot englannin muotoinvariantteja vasten",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Asetukset:",
   "cli.help.diff.usage": "Käyttö: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Tulosta ohje",
-  "cli.help.option.locale": "Alueasetus ajonaikaisille viesteille ja mukautetulle ohjetulosteelle",
+  "cli.help.option.locale": "Kielialue suorituksen aikaisille viesteille ja mukautetulle ohjetulosteelle",
   "cli.help.status.option.en": "Polku englanninkielisen lähdekartan JSON-tiedostoon",
   "cli.help.status.option.langs": "Pilkuilla erotettu kielilista tai `all`",
   "cli.help.status.options": "Asetukset:",

@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "nie ustalono języków docelowych",
   "cli.help.command.diff": "Porównaj klucze między referencjami base/head dla angielskiej mapy źródłowej",
-  "cli.help.command.help": "Wyświetl ten komunikat lub pomoc dla podanego podpolecenia (podpoleceń)",
+  "cli.help.command.help": "Wyświetl tę wiadomość lub pomoc dla podanych podkomend",
   "cli.help.command.status": "Zgłoś brakujące lub nieaktualne tłumaczenia, używając metadanych stanu tłumacza",
   "cli.help.command.translate": "Generuj/aktualizuj tłumaczenia przez integrację z dostawcą z zachowaniem bezpieczeństwa cache/stanu",
   "cli.help.command.validate": "Sprawdź pliki przetłumaczonych języków względem niezmienników formatu angielskiego",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Opcje:",
   "cli.help.diff.usage": "Użycie: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Wyświetl pomoc",
-  "cli.help.option.locale": "Lokalizacja dla komunikatów czasu działania i niestandardowego wyjścia pomocy",
+  "cli.help.option.locale": "Ustawienia regionalne dla komunikatów w czasie działania i niestandardowego wyjścia pomocy",
   "cli.help.status.option.en": "Ścieżka do pliku JSON angielskiej mapy źródłowej",
   "cli.help.status.option.langs": "Lista języków rozdzielona przecinkami lub `all`",
   "cli.help.status.options": "Opcje:",

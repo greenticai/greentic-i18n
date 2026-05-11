@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "లక్ష్య భాషలు ఏవీ నిర్ధారించబడలేదు",
   "cli.help.command.diff": "ఇంగ్లీష్ సోర్స్ మ్యాప్ కోసం base/head refs మధ్య కీ తేడాలను చూపించు",
-  "cli.help.command.help": "ఈ సందేశాన్ని లేదా ఇచ్చిన ఉపకమాండ్(ల) సహాయాన్ని ముద్రించు",
+  "cli.help.command.help": "ఈ సందేశాన్ని లేదా ఇచ్చిన ఉపకమాండ్(ల) సహాయాన్ని ముద్రించండి",
   "cli.help.command.status": "అనువాదక స్థితి మెటాడేటాను ఉపయోగించి లేని లేదా పాతబడిన అనువాదాలను నివేదించు",
   "cli.help.command.translate": "క్యాష్/స్థితి భద్రతతో ప్రొవైడర్ ఇంటిగ్రేషన్ ద్వారా అనువాదాలను సృష్టించు/నవీకరించు",
   "cli.help.command.validate": "ఇంగ్లీష్ ఫార్మాట్ స్థిరనియమాలపై అనువదించిన భాషా ఫైళ్లను ధృవీకరించు",
@@ -10,7 +10,7 @@
   "cli.help.diff.option.head": "తులన కోసం head git ref",
   "cli.help.diff.options": "ఎంపికలు:",
   "cli.help.diff.usage": "వినియోగం: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
-  "cli.help.option.help": "సహాయాన్ని ముద్రించు",
+  "cli.help.option.help": "సహాయాన్ని ముద్రించండి",
   "cli.help.option.locale": "రన్‌టైమ్ సందేశాలు మరియు అనుకూల సహాయ అవుట్‌పుట్ కోసం లోకేల్",
   "cli.help.status.option.en": "ఇంగ్లీష్ సోర్స్ మ్యాప్ JSON ఫైల్‌కు మార్గం",
   "cli.help.status.option.langs": "కామాతో విడదీసిన భాషల జాబితా, లేదా `all`",

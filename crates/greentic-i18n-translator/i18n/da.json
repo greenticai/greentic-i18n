@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "ingen målsprog fundet",
   "cli.help.command.diff": "Sammenlign nøgler mellem base/head-referencer for det engelske kildekort",
-  "cli.help.command.help": "Udskriv denne besked eller hjælpen for den angivne underkommando(er)",
+  "cli.help.command.help": "Udskriv denne meddelelse eller hjælpen for de angivne underkommando(er)",
   "cli.help.command.status": "Rapportér manglende eller forældede oversættelser ved hjælp af metadata for oversættertilstand",
   "cli.help.command.translate": "Generer/opdater oversættelser via provider-integration med cache-/tilstandssikkerhed",
   "cli.help.command.validate": "Validér oversatte sprogfiler mod engelske formatinvarianter",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Indstillinger:",
   "cli.help.diff.usage": "Brug: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Udskriv hjælp",
-  "cli.help.option.locale": "Locale for runtime-beskeder og tilpasset hjælpeoutput",
+  "cli.help.option.locale": "Sprogindstilling for runtime-meddelelser og brugerdefineret hjælpeoutput",
   "cli.help.status.option.en": "Sti til den engelske kildekort-JSON-fil",
   "cli.help.status.option.langs": "Kommasepareret sprogliste, eller `all`",
   "cli.help.status.options": "Indstillinger:",

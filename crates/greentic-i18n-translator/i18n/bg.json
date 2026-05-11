@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "не са определени целеви езици",
   "cli.help.command.diff": "Сравнява ключовете между base/head референциите за английската изходна карта",
-  "cli.help.command.help": "Отпечатва това съобщение или помощта за дадените подкоманди",
+  "cli.help.command.help": "Отпечатва това съобщение или помощта за дадената(ите) подкоманда(и)",
   "cli.help.command.status": "Докладва липсващи или остарели преводи, използвайки метаданните за състоянието на преводача",
   "cli.help.command.translate": "Генерира/обновява преводи чрез интеграция с доставчик със защита на кеша/състоянието",
   "cli.help.command.validate": "Валидира преведените езикови файлове спрямо форматните инварианти на английския",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Опции:",
   "cli.help.diff.usage": "Употреба: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Отпечатва помощ",
-  "cli.help.option.locale": "Локал за съобщения по време на изпълнение и персонализиран изход за помощ",
+  "cli.help.option.locale": "Локал за съобщения по време на изпълнение и персонализиран изход на помощта",
   "cli.help.status.option.en": "Път до JSON файла с английската изходна карта",
   "cli.help.status.option.langs": "Списък с езици, разделени със запетая, или `all`",
   "cli.help.status.options": "Опции:",

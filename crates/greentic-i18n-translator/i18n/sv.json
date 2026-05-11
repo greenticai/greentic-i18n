@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "inga målspråk hittades",
   "cli.help.command.diff": "Jämför nycklar mellan base/head-referenser för den engelska källkartan",
-  "cli.help.command.help": "Skriv ut detta meddelande eller hjälpen för angivna underkommandon",
+  "cli.help.command.help": "Skriv ut detta meddelande eller hjälpen för de angivna underkommandona",
   "cli.help.command.status": "Rapportera saknade eller inaktuella översättningar med metadata från översättartillstånd",
   "cli.help.command.translate": "Generera/uppdatera översättningar via leverantörsintegration med säker cache/tillstånd-hantering",
   "cli.help.command.validate": "Validera översatta språkfiler mot engelska formatinvarianter",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Alternativ:",
   "cli.help.diff.usage": "Användning: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Skriv ut hjälp",
-  "cli.help.option.locale": "Locale för runtime-meddelanden och anpassad hjälputdata",
+  "cli.help.option.locale": "Språkvariant för körningsmeddelanden och anpassad hjälputmatning",
   "cli.help.status.option.en": "Sökväg till JSON-filen med den engelska källkartan",
   "cli.help.status.option.langs": "Kommaseparerad språklista, eller `all`",
   "cli.help.status.options": "Alternativ:",

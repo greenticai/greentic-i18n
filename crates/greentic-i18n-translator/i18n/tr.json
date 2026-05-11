@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "hedef dil çözümlenmedi",
   "cli.help.command.diff": "İngilizce kaynak haritası için base/head referansları arasındaki anahtarları karşılaştır",
-  "cli.help.command.help": "Bu mesajı veya verilen alt komut(lar)ın yardımını yazdır",
+  "cli.help.command.help": "Bu iletiyi veya verilen alt komutların yardımını yazdır",
   "cli.help.command.status": "Çevirmen durum meta verilerini kullanarak eksik veya güncelliğini yitirmiş çevirileri raporla",
   "cli.help.command.translate": "Önbellek/durum güvenliğiyle sağlayıcı entegrasyonu üzerinden çevirileri oluştur/güncelle",
   "cli.help.command.validate": "Çevrilmiş dil dosyalarını İngilizce biçim değişmezlerine karşı doğrula",

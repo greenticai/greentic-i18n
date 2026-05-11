@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "لم يتم تحديد أي لغات هدف",
   "cli.help.command.diff": "قارن المفاتيح بين مراجع base/head لخريطة المصدر الإنجليزية",
-  "cli.help.command.help": "اطبع هذه الرسالة أو مساعدة الأمر الفرعي المحدد",
+  "cli.help.command.help": "اطبع هذه الرسالة أو مساعدة الأمر/الأوامر الفرعية المحددة",
   "cli.help.command.status": "أبلغ عن الترجمات المفقودة أو القديمة باستخدام بيانات حالة المترجم الوصفية",
   "cli.help.command.translate": "أنشئ/حدّث الترجمات عبر تكامل الموفر مع أمان التخزين المؤقت/الحالة",
   "cli.help.command.validate": "تحقق من صحة ملفات اللغات المترجمة مقابل ثوابت تنسيق الإنجليزية",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "الخيارات:",
   "cli.help.diff.usage": "الاستخدام: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "اطبع المساعدة",
-  "cli.help.option.locale": "الإعدادات المحلية لرسائل وقت التشغيل ومخرجات المساعدة المخصصة",
+  "cli.help.option.locale": "الإعداد المحلي لرسائل وقت التشغيل ومخرجات المساعدة المخصصة",
   "cli.help.status.option.en": "مسار ملف JSON لخريطة المصدر الإنجليزية",
   "cli.help.status.option.langs": "قائمة لغات مفصولة بفواصل، أو `all`",
   "cli.help.status.options": "الخيارات:",

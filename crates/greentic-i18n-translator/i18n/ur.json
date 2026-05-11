@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "کوئی ہدف زبانیں متعین نہیں ہوئیں",
   "cli.help.command.diff": "انگریزی سورس میپ کے لیے base/head refs کے درمیان keys کا فرق دکھائیں",
-  "cli.help.command.help": "یہ پیغام یا دیے گئے ذیلی کمانڈ(ز) کی مدد پرنٹ کریں",
+  "cli.help.command.help": "یہ پیغام یا دیے گئے ذیلی کمانڈز کی مدد پرنٹ کریں",
   "cli.help.command.status": "ترجمہ کار state metadata استعمال کرتے ہوئے گم شدہ یا پرانے تراجم کی رپورٹ دیں",
   "cli.help.command.translate": "cache/state تحفظ کے ساتھ provider انضمام کے ذریعے تراجم بنائیں/اپ ڈیٹ کریں",
   "cli.help.command.validate": "ترجمہ شدہ زبان فائلوں کو انگریزی فارمیٹ کے مستقل اصولوں کے خلاف جانچیں",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "اختیارات:",
   "cli.help.diff.usage": "استعمال: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "مدد پرنٹ کریں",
-  "cli.help.option.locale": "runtime پیغامات اور حسبِ ضرورت مدد آؤٹ پٹ کے لیے locale",
+  "cli.help.option.locale": "رن ٹائم پیغامات اور حسبِ ضرورت مدد کے آؤٹ پٹ کے لیے لوکیل",
   "cli.help.status.option.en": "انگریزی سورس میپ JSON فائل کا راستہ",
   "cli.help.status.option.langs": "کوما سے جدا زبانوں کی فہرست، یا `all`",
   "cli.help.status.options": "اختیارات:",

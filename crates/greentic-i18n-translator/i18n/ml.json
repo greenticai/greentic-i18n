@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "ലക്ഷ്യ ഭാഷകൾ ഒന്നും കണ്ടെത്തിയില്ല",
   "cli.help.command.diff": "ഇംഗ്ലീഷ് സോഴ്‌സ് മാപ്പിനായി base/head ref-കൾക്കിടയിലെ കീ വ്യത്യാസങ്ങൾ കാണിക്കുക",
-  "cli.help.command.help": "ഈ സന്ദേശമോ നൽകിയിരിക്കുന്ന ഉപകമാൻഡ്(കൾ)ന്റെ സഹായമോ പ്രിന്റ് ചെയ്യുക",
+  "cli.help.command.help": "ഈ സന്ദേശമോ നൽകിയ ഉപകമാൻഡ്(കൾ)ന്റെ സഹായമോ പ്രിന്റ് ചെയ്യുക",
   "cli.help.command.status": "ട്രാൻസ്ലേറ്റർ സ്റ്റേറ്റ് മെറ്റാഡാറ്റ ഉപയോഗിച്ച് കാണാതായതോ പഴകിയതോ ആയ വിവർത്തനങ്ങൾ റിപ്പോർട്ട് ചെയ്യുക",
   "cli.help.command.translate": "കാഷ്/സ്റ്റേറ്റ് സുരക്ഷയോടെ provider ഇന്റഗ്രേഷൻ വഴി വിവർത്തനങ്ങൾ സൃഷ്ടിക്കുക/അപ്‌ഡേറ്റ് ചെയ്യുക",
   "cli.help.command.validate": "ഇംഗ്ലീഷ് ഫോർമാറ്റ് invariants-നെതിരെ വിവർത്തനം ചെയ്ത ഭാഷാ ഫയലുകൾ സാധൂകരിക്കുക",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "ഓപ്ഷനുകൾ:",
   "cli.help.diff.usage": "ഉപയോഗം: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "സഹായം പ്രിന്റ് ചെയ്യുക",
-  "cli.help.option.locale": "റൺടൈം സന്ദേശങ്ങൾക്കും കസ്റ്റം സഹായ ഔട്ട്പുട്ടിനും വേണ്ട locale",
+  "cli.help.option.locale": "റൺടൈം സന്ദേശങ്ങൾക്കും ഇഷ്ടാനുസൃത സഹായ ഔട്ട്പുട്ടിനുമുള്ള ലൊക്കേൽ",
   "cli.help.status.option.en": "ഇംഗ്ലീഷ് സോഴ്‌സ് മാപ്പ് JSON ഫയലിലേക്കുള്ള പാത",
   "cli.help.status.option.langs": "കോമ കൊണ്ട് വേർതിരിച്ച ഭാഷാ പട്ടിക, അല്ലെങ്കിൽ `all`",
   "cli.help.status.options": "ഓപ്ഷനുകൾ:",

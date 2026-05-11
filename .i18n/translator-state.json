@@ -2404,10 +2404,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "9119a63361713b897f273c0e1b8a3f1602a2d720308771d0ee45a07bd5c599ff",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "3f6274b2ead1a78f836c871c451bff4efdd8635a58574d1a3ef1efc0a1a380e6",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479770
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -2626,10 +2626,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e233b6c62e15295fe6db85d7b7b1cde6965fe1ca3a64b8302fdcb5f0c9abb1fd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479770
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -2638,10 +2638,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "15e248037070a8ff649cc5f536aecdfdc7de8cded9a75833fc82b7772c65f88a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770043
+          "timestamp_epoch_secs": 1778479770
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -7544,10 +7544,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "0b6c9ca3b897472cad34bcecc966977db532dfeb66c175a68b0c006a0dda4acd",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "4bfd639c60d86959c3f8ea383ee5df79a925dfa06c58561c42901ebbb36c736c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479776
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -7766,10 +7766,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "487f0ab2b1d9432d55cfa75c6180fb003351080450277477a953afeb2f861929",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479776
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -7778,10 +7778,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "9e924c0073834ee98fbe1ed16d432a7b3d7145c70119fcd73256a41c9dbb4855",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770048
+          "timestamp_epoch_secs": 1778479776
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -12684,10 +12684,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "6137fc7421293855c6f2309be14849c59fa5d6289fab9907abf8a87d836467f3",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "2eea68eb16bb37d46e3f673671e3f65857d52b7d6b964c40ab5f754f2bdaf3fc",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479780
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -12906,10 +12906,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e233b6c62e15295fe6db85d7b7b1cde6965fe1ca3a64b8302fdcb5f0c9abb1fd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479780
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -12918,10 +12918,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "180d741ce77379f04a77fc02437be2ffcbe777eb2b907e5520b6af4a14392b1a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770052
+          "timestamp_epoch_secs": 1778479780
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -17824,10 +17824,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "0b6c9ca3b897472cad34bcecc966977db532dfeb66c175a68b0c006a0dda4acd",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "49e55f79557c297438ab25515e63ff3cb59b2095eff1ae7c38e747b6bf1bf4c6",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479784
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -18046,10 +18046,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e233b6c62e15295fe6db85d7b7b1cde6965fe1ca3a64b8302fdcb5f0c9abb1fd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479784
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -18058,10 +18058,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "180d741ce77379f04a77fc02437be2ffcbe777eb2b907e5520b6af4a14392b1a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770056
+          "timestamp_epoch_secs": 1778479784
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -22964,10 +22964,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "9119a63361713b897f273c0e1b8a3f1602a2d720308771d0ee45a07bd5c599ff",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "4bfd639c60d86959c3f8ea383ee5df79a925dfa06c58561c42901ebbb36c736c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479789
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -23186,10 +23186,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "487f0ab2b1d9432d55cfa75c6180fb003351080450277477a953afeb2f861929",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479789
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -23198,10 +23198,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "9e924c0073834ee98fbe1ed16d432a7b3d7145c70119fcd73256a41c9dbb4855",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770061
+          "timestamp_epoch_secs": 1778479789
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -28104,10 +28104,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "d25723cf5eba623410e01f9d027357236ab3ca007459a1184575215e2ccdbf2d",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "b7a9d34488c6c43f51454a60190d1718deb4ad8baf737ca024c61db304cce722",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479794
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -28326,10 +28326,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e233b6c62e15295fe6db85d7b7b1cde6965fe1ca3a64b8302fdcb5f0c9abb1fd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479794
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -28338,10 +28338,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "2ac0b29238c69b547aab9db7bcf2cd6c0f47d1fe6bf96dd66a54c76a691d9356",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "affd3d858429a9cd93216a56ef7a238be647a4962455ebbe3a81a9a42b141ccf",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770068
+          "timestamp_epoch_secs": 1778479794
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -33244,10 +33244,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "0b6c9ca3b897472cad34bcecc966977db532dfeb66c175a68b0c006a0dda4acd",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "4bfd639c60d86959c3f8ea383ee5df79a925dfa06c58561c42901ebbb36c736c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479798
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -33466,10 +33466,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "487f0ab2b1d9432d55cfa75c6180fb003351080450277477a953afeb2f861929",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479798
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -33478,10 +33478,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "9e924c0073834ee98fbe1ed16d432a7b3d7145c70119fcd73256a41c9dbb4855",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770072
+          "timestamp_epoch_secs": 1778479798
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -38384,10 +38384,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "0b6c9ca3b897472cad34bcecc966977db532dfeb66c175a68b0c006a0dda4acd",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "3f6274b2ead1a78f836c871c451bff4efdd8635a58574d1a3ef1efc0a1a380e6",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479802
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -38606,10 +38606,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e233b6c62e15295fe6db85d7b7b1cde6965fe1ca3a64b8302fdcb5f0c9abb1fd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479802
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -38618,10 +38618,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "15e248037070a8ff649cc5f536aecdfdc7de8cded9a75833fc82b7772c65f88a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770076
+          "timestamp_epoch_secs": 1778479802
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -43524,10 +43524,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "9119a63361713b897f273c0e1b8a3f1602a2d720308771d0ee45a07bd5c599ff",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "3f6274b2ead1a78f836c871c451bff4efdd8635a58574d1a3ef1efc0a1a380e6",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479807
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -43746,10 +43746,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e233b6c62e15295fe6db85d7b7b1cde6965fe1ca3a64b8302fdcb5f0c9abb1fd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479807
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -43758,10 +43758,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "34b3c769057668435038e166ae8f02967459c84884402e2da8a27f6c90052d00",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "40f4caefc97d33aa1891a99afa65e151cbeaede64d1fd8a69b486239431bc34d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770086
+          "timestamp_epoch_secs": 1778479807
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -48664,10 +48664,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "9119a63361713b897f273c0e1b8a3f1602a2d720308771d0ee45a07bd5c599ff",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "af3efcca2a5f1156ca27d543c7b7bf388822029bd5d4d5c54ef87d6ee1365bc2",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479812
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -48886,10 +48886,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "fc1dc330da08368fe4ae3140646c418a0a91e72d629ef00bd2329d7f6cc2d243",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e233b6c62e15295fe6db85d7b7b1cde6965fe1ca3a64b8302fdcb5f0c9abb1fd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479812
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -48898,10 +48898,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dbc46b1ea3c2254de05ca0bf46608e1f2fe08474ae784d59b5d32afb4811eab1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "49cdabedf07aaf0140be46552c105bcf7fa5fb3d271020617e8ed516ca4736db",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770092
+          "timestamp_epoch_secs": 1778479812
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -53804,10 +53804,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "b44196706ffbb927a03698a341cd967e56d9930a5c6499444f96aa72df5904be",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "446dfdd3b8ea650b623b9e7f1be27595f22dcbd097e400552912224caa7f7913",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479818
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -54026,10 +54026,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "9b3a5cc77e55166e8d206a4a38012c363abc7a5baf6a45f05ef83ac62d65796e",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "dbfea7b6378e04492cef610be99eafca8dae603785bedc60439545ab7bc3f6ac",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479818
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -54038,10 +54038,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "26c949ca37b9655c0bf449e72b1a3e8923a89b05e8199a285afd56a2d55eafeb",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "382bdcfd7d471330fef48750908e8d009750cef0ae319e99292d4ebbe02f88f6",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770101
+          "timestamp_epoch_secs": 1778479818
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -58944,10 +58944,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "f9d195db163b88675dde869cb026f68e9a5089f4137960d01f1876576627705f",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "b9ff42f74ba7df5b92bb3ac06535578b3089fbdef01bfbe7d302e2ad65e5d023",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479822
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -59166,10 +59166,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "45c1efe0f4929d235cec856456553bf97c9e4376b9b157746ed7bc951eae9d9e",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "cbf71c94a96b3a36240c5c3259c65f5097b07303f928171f960d7362ce2be35c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479822
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -59178,10 +59178,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "aaf708e9542537498d89904502d947205f0c8c9027f6de43a0fb3825115f6537",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "78ca5117387d16089b492acdf2e6d6319943bcd6e4df2c1a9646707afea8f1c7",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770106
+          "timestamp_epoch_secs": 1778479822
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -64084,10 +64084,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "cb1973359c8012cad0f695a1feca43eeae830d4643542327756f9eb9f2d8ac54",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "d08a38d8f35b0d681a75d0f74a5d23a12c1d2499be4b1c8d58f442887d3f83ca",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479827
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -64306,10 +64306,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "500a46ea598ca9036fbaaf59fc3d08c462d084b4df6583d024d5a4d95fb530e1",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "23d6ece4cfbc19a2564c55f5ede8b7e764e7dcfd8bc0627105a8bce91ca291f8",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479827
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -64318,10 +64318,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "5ed90a05a57aa20889ae6180729af54a1c6463177cb4b377efdf1f1c1c60bc32",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "302b5754f505f1b099db23c6c109330473243f22afbe8b4d2eb0eeec93010f6e",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770111
+          "timestamp_epoch_secs": 1778479827
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -69224,10 +69224,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "ea2426836dfde06f27afb6012ed748555e3828acce027802324fd82321b5e65d",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "4ac8f42bc7fb25fad4fdde088e4dbfb7c51a58ca15e738d6bbceb95acc6e9c44",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479832
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -69446,10 +69446,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "05992b1397bc0910cd987ed39e56d25e2a7f307b12319c06d273206f04e83710",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "43cdf8b7e87d55bf0dc2d51224873f6268d8bd5f4dbe98de15b36fede445fee0",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479832
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -69458,10 +69458,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "1184c45b81b7bc62b1ceefcb2d997b2e12278f2073dd201eddb16892613234bd",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "e4567ff7e1ca139e2795a5de1768b7b6f2e40005ffe64fefda1e82a941a7a640",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770117
+          "timestamp_epoch_secs": 1778479832
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -74364,10 +74364,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "d5ce24ee31461b2bc0797d93010730115836a1dd0d5d7cfdf58dc885a8944a99",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "8abe1a297978f955dd367d088a2dcda482591b927b146c280ace4b15fb98a64d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479835
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -74586,10 +74586,10 @@
           "timestamp_epoch_secs": 1772361691
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "2c88778ba9a75e844fa1b4eab4ee4f1082d64451aec33586ce596d186804837f",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "a749eb71da7f77a28672b802ca68331f3f6607aabc88de42374dee5f01b5ab89",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479835
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -74598,10 +74598,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "a4e2ffe9f1ab6433ecf74e0c46fec3393804cabe3c9fb2cac8f186b304e0b740",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "a517383aed2656565644a004046f76b7f26acf3f3228e7091264ed081037f411",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770121
+          "timestamp_epoch_secs": 1778479835
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -79504,10 +79504,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "31cfcd27c4b77efadb17d0fae824cae439b3d5167387e69b4477484c865d0caf",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "e2f314ff889f9bbdf61632c121457cd9765c215e63201c630faa9fc20f2ccdb9",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479840
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -79726,10 +79726,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "2382a7f7a487c08bbb3cfea3dae5752a1e7bd93bebe3011557b03e1eb675037e",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "c4def50a1013109f431ccfa76cc8b43f6a2a5de3e3aae7385302b0ded283b73e",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479840
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -79738,10 +79738,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "9b90311dc41de24fef88492f49196e440ee370aedb526cdd11cba7184b503bb9",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "e18bf82cc91de947cdaef6113d9ef89a290c09ca84b34d575e5b583cfcee5f9a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770126
+          "timestamp_epoch_secs": 1778479840
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -84644,10 +84644,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "0209f635296424686b19260361a14509710566ba0d0db46be881dfb0f6196e80",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "48e6486f3c128b322f894fdd7d9b11662c95ac5f6c61ecf37c3cca72b918e0f9",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479845
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -84866,10 +84866,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "84bdcfa229f975ca974aa3b2ea255104a23f55aacb1ac2c155e892ea7914eb85",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "880de98ea9c4d9b7f11711c26eae1449e81225a5b7af9a2e4f69add04af1c93e",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479845
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -84878,10 +84878,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "a71b4e975cc427feafed41ba2853597e0324f359b641ee70b1a96df62854b8d2",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "47eb5f964cc496adf0ced77ce66c0df985d78dec67953bb327090fea39f2a172",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770134
+          "timestamp_epoch_secs": 1778479845
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -89784,10 +89784,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479849
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -90006,10 +90006,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479849
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -90018,10 +90018,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "7b67799712f49d8e1054b01eb3a7155d87f4bc3a793cb0c04f8f56d3f6f678c5",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770140
+          "timestamp_epoch_secs": 1778479849
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -94924,10 +94924,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "51913f84538e9881b7779085064bbbea126cfc7164ef0ee18aa8d386361447fa",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "b949358b2e9ebb3572008332368e63d043e02b4404ea2b86d65b782b1c6fc32b",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479852
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -95146,10 +95146,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "08e46378de994666a37da84ea267d9dff1100bd2dfc2a65dcac4fff92b5d3b77",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "49686c2414fd0d9c66c28b433c3dcf18ef98b4d30677bd6ef155e10cf73f006e",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479852
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -95158,10 +95158,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "187ef5648dd8b093992af0605a1da2ff3a1e915315a86061a3ff1a1827e10dc2",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "7852f1ea44762f753f7330217237ec645fa45c750626a1799f3aa0610ef17e06",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770144
+          "timestamp_epoch_secs": 1778479852
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -100064,10 +100064,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "bdc4bc7b0b2489f1cc2a5532e1d19c2557712b9d16a34ebd1665469c44401b82",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "2b4c648c7e03cf9698057869dd4608589a67508fb0d517c96b2a00830d73148d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479856
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -100286,10 +100286,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "408a05ef892f754a1ff50d4b8e641b8642e8b83b48063fd7f57dce3d9d5dfd5c",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "eb9f7194791fa9b3f8089c74f26bc8dc324688b8e6d425957d6c50e39b5b88dc",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479856
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -100298,10 +100298,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "8bdd2eb38867b0583df916637321ad9ebfeb90c0af8dc3c4f1ea1afe61a390e1",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "24ef132733c92cf5b1d74e6b6e5b6318526524fe92e52965470479f74f4348b9",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770152
+          "timestamp_epoch_secs": 1778479856
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -105204,10 +105204,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "7cd80b45d509af98bf9e61feaba70fc3b630c2366c7251b1b87b3b4705ae6d46",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "a7091085934dd26bebdb9638ab30372dba18dc17cd380f0d298bf1852bd4dedb",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479861
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -105426,10 +105426,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "227710134db0148a91da2b4387c2054d34d94df856e5065d65966a67e94620ed",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "f491d19680886db86ac3d3cc4c3ae0c6d868d903b397616cc42ca3b4e8d754f5",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479861
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -105438,10 +105438,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "4f491f4436202522a714249554387ae297b112d1d7356effd57fdf41d556841a",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "623d52a1e4778a88d10c82fcb7054b9338bd68b71e5127f34e3b1a9dac05d4cf",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770157
+          "timestamp_epoch_secs": 1778479861
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -110344,10 +110344,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "152e591a9e95dc49f45defc90b4eccf045c598ce0f579c5101f8dfe8ef3fedac",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "5ea46d2f8d196f29e4c8d058ec5c81f1eeb944bc8233c8139fe7f1fcbc0028cc",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479864
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -110566,10 +110566,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "d9fa5cac67465feb8ddd3812f655d9819a14911e3cfd69294a40b8ea1ad65890",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "6d16c9d724ed90afac2a923ccd6a0a4684dc85575e5ed6ee2982a91090fb9ed5",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479864
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -110578,10 +110578,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "b47586133ca1284f4dc8277bfe66bf1994c37caa1468289decc86a3430c54456",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "ba9fb80d600712e423082ef3239a242ba477ff75b4bcb5fd78b0fb04453e6997",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770162
+          "timestamp_epoch_secs": 1778479864
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -115484,10 +115484,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "41d4721cd0f9e7cd04db5087b89c3befc71a26371b63e90569b6e3ebf2f101dc",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "5a7b508bcd6a088b3b2653a733affb35a3264fd01598cf15da3fc72af0cd0d56",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479868
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -115706,10 +115706,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "a75494049899fbecdc73c0004ec03c125dd4b16635c9374c8d5012a0ce862c6b",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "b65d5825b84ec60aefbe39377cbd18f3159ab64c7c1de102a4fe8f820b2e8b5d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479868
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -115718,10 +115718,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "0d1f9ddf2200073c955f39ca8388f258005513273f3c7b8aabd83c89d586a275",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "fb0d09a459fb23be895e30043ca8d97df77c88757b296aa33c75cf03235f9f4a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770168
+          "timestamp_epoch_secs": 1778479868
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -121468,10 +121468,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "73284f366ef4d3d4496b38f008a0bbfa09280c0990d0fe9a8d85b31ebab941ad",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "49aa4f4ba9c9a8fee71cd198490f16d37008779048799aaea9509873ffbab45b",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479873
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -121690,10 +121690,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "700faee17ea1057f8e0c3da87e8034453973bc88e49d2a8ad57495d6f0771e05",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "42f647a4eea7c98f75cc5049e4d5ea99d21e5ef10c927c9f9c4f80ba6cfcd27b",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479873
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -121702,10 +121702,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "f1959dc58faa87da340de650afb2d452e8f55086daf72eb8f668261d975ecb4e",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "9ae15f3709513d151b001c45f9e4e4434368f838774634e5c115f10636b6d493",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770176
+          "timestamp_epoch_secs": 1778479873
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -126608,10 +126608,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "b37c6d2b6f898f2e1acc93f7953f2b241550504aa1b29676a81c3a8aa03f2f48",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "2a90e36a8c2090d7f4e3dafe1273f0b64c03fff3927fa95b99a646a4208da416",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479880
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -126830,10 +126830,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "6c463b55aa673e697d64c586e573845f79a703584d2185f2145a8188d5013b2e",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "188b938209934d852e022543a1a2caa6595dea60e37e7283f7b43e751748baac",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479880
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -126842,10 +126842,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "0062998a7335f20e4df73ef7000b8022f9774c7e3c7998ad18e1fa548aeff4df",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "39eff09dd924958a422f77d1ecf92487a8174e68b21e8c14fbffe597c584d1d1",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770182
+          "timestamp_epoch_secs": 1778479880
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -131748,10 +131748,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "2afe6206a732d255e580665c987eeb9f2428d8d8466cb233b2945fbe7b46df7d",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "88e4c22cab9802d9b64a14a347441041320173778c283be7aa09d99c75aec646",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479886
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -131970,10 +131970,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "73a48020af2afbe8d74406ce3af4a3154620f1517f1e92635e1997083e12451a",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "ad891124f09474fd45cc8ace93b66d0eff1bb3493ae7a633a605ce93d8a4117a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479886
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -131982,10 +131982,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "24b5f396a0b24d389f704fae2910577c4de4a91677f6331febd16b4eaa700b17",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "52584aa007ddc20f9ca9328f1e8beda3720da876db94393c256b8b6483f2eb64",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770186
+          "timestamp_epoch_secs": 1778479886
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -136888,10 +136888,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "e7e5569f6a201d0931b73af4f7e844ad59424661ca8c7a3ff5a53354003544c1",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "1cb173fdf59876ee833fe8fa43069b651a881f42353eaea9ad62d31477c77c3f",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479890
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -137110,10 +137110,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "914478c921562583edca45482651bbba96f296b614b3df8a5d664c8ae6d9b921",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "9709f33f7cd753f91568306606ab35d7f61585cf5d99610cecc1cb32acb370b1",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479890
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -137122,10 +137122,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "6473db87d38bd986edbf0815190c787cf5ecb329a4c8fa0fb116c7c602b7da30",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "ec12434ea7c3426db83c1a658453a63b92ec598bc7bc7f5e2e079a7a599a54b1",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770192
+          "timestamp_epoch_secs": 1778479890
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -142028,10 +142028,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "38dee6267a728a166a43db6c3c100554cae2fb80f94f7d66a009152161c3c91d",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "32f61ae8b9b2795310abf7b79b255e0f3dddb85eaefc386ed2fc34414339130a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479894
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -142250,10 +142250,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "68da9156be72c7ef2328798521fcdebedd443790456a907109181f3e49be66f2",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "1cffdb956241c972db4b4f4f87aaa3449ee630c37c478dd436a3392ca16bccb9",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479894
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -142262,10 +142262,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "2877498532e635825892912bb941eafce26b0376bcefa73496e9da886969dd9b",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "acf84a8ac06939fe7477e734e430213c4a4ab2762532cc3fcbd3c6c7335c21bd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770198
+          "timestamp_epoch_secs": 1778479894
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -147168,10 +147168,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "75313783c11046e438de8b08862c7929a96405c295b9d2dd1d9cf7df2cf2e6b0",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "f7bc8f35c10af35fa7f7f63f7e265dc209939cbf45d6ec9877245554b097a097",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479898
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -147390,10 +147390,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "927bda253ea3067bd26a066b354348ca7edd8303ee77da2a64a9f4ef5b133cf5",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "78039ba5b34a93e5f4e1329f6299556c65ceeb78e1054683b92fbc9ac93d3c62",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479898
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -147402,10 +147402,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "7833b458369d8fb5ca468a5067e35b5a10c4739baa62a8c32732555d4ad0c983",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "8ceb96e84f79a3ecc7c5ae3b17b89c7a770a8e3ba0666bc6dcc14c7c9eb16410",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770207
+          "timestamp_epoch_secs": 1778479898
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -152308,10 +152308,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "dd691c125e33de62e59ad83fd1dd1f569c773cae6d2e3537335f7bafa2c6cbe0",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "7f7a27a238cd997b08983fed332f8948be81094707182036bffec01068d25685",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479902
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -152530,10 +152530,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "24aa15c79c46f0c53d89024322316c7b9286d30863612c5dc0f3ee2c8d194427",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "2c2032b0ac261ae2d34a9d973693f23e47dfceeb2517d188ccf91ec8fc9d4117",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479902
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -152542,10 +152542,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "30c836e50c5daad885eea2860efeeca55cc4128a19ae09e32f588b89e1a2ecd2",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "9444322e2092184a0c616e89449e932d3a83053a89060c646ddd2de40bd294e7",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770211
+          "timestamp_epoch_secs": 1778479902
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -157448,10 +157448,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "3b9795e7499b2519e39cb6126ccedec1a7e82e2dd4d28f33a0ee45a86114f1b3",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "c5a70d86eae8fd1aed13c73f893183366a634b838e7582b239f765922b9aa408",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479905
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -157670,10 +157670,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "d8ae6387a6d3f3d00ff3d93aa7a44cf441e105fff1d2b83afada03ebe891d899",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "794d57f408486fd584a185953f66a4a05517566335dad43001405032921d7caf",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479905
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -157682,10 +157682,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "882e5044a8c3914a3b4d31267ace74d318426c1ecb8fb5820d85fa4c6a4c7cc8",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "ec01e7502fa89cb7bdd5e130fb711acb18e75dbbabc112c4c9c9ef5fc5cf5a2a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770216
+          "timestamp_epoch_secs": 1778479905
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -162588,10 +162588,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "6d341e5eafe2fec9bab0d94f3468918d7ef4ed1b1f32157de96dc0ef1cbd8d52",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "5f6884830da6b8752fc99802e21a59090330a2bce09f8c79edddf0663c788e99",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479908
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -162810,10 +162810,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "9284e389b760a684154527d48da29b3ea7c96fc98b9154afa624d127585fc04b",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "94d00e1f50740da061dc2e550188f3be3bc4e3159f7dc297230bc03f4382153d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479908
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -162822,10 +162822,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "fbba33ec1dbb32111023129969591cdd34a78f39a789ac4da8d4ad903ca2a2d9",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "603fc31bfa2f559e32922c705b8c4be35110f5f29aaf0e6578aebf9cebc0ccda",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770220
+          "timestamp_epoch_secs": 1778479908
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -167728,10 +167728,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "79674771d1412ffd32f2b51798fcaa33f4a010dea18b8062fe03765b6b7ba4d3",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "b21c179b59b8f18ab03467f0f8bb7c6609e1b749737b7a1eab5ba8426f25fbd5",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479916
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -167950,10 +167950,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "aa652f7d04c22b99eeddb29fd8d7259de5a7d5f76210cac08f1000807ea0a95d",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "3dbb56c405124b27f4e5445d3f58cdbc40601eeb6d758cbc97f98634dee9e00c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479916
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -167962,10 +167962,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "14761b9820e6fc3e29452fe69aade50fbf3c832fd204a8efc23e89c3bd6bfe3d",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "f0e7b4b6c3d7ce6ba59a94c87f358a87921b38824d6a29c4abba4c272f17e06a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770226
+          "timestamp_epoch_secs": 1778479916
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -172868,10 +172868,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "8eb574bbc02c3ecec78076f7ba957a5722416fe940b8056e521413aeb69d153e",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "0728bd55f8d65024b2889d7bdcdb59d34495f5440c945996fae4b5bb753802cf",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479922
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -173090,10 +173090,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "c9559909470b80907f3d8e1604a7b43937ffe7843664d7ba6973252e011818dd",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "440cb258863474d208fb4b7301554ec5f771e9495081a405b5dca8748aa25107",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479922
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -173102,10 +173102,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "280d589f2f6d656e7664feef2416ca7a785026b5c114f1333478dcff6a220335",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "9fad04b7e7b0a027762a0991085bbd00ee389be33e931e142287a49ceaa42526",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770233
+          "timestamp_epoch_secs": 1778479922
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -178008,10 +178008,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "fcb0f2a4f1544567469e7c25af3653672e80e2006604756e0f3e43081a8cc7bd",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "ca591a1c4e62fbe905512b407e880d437abc8b75897b7e1c882fd066cb0223d4",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479925
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -178230,10 +178230,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "80ee39af8003b40f3c2d0f6a6be35e4b10e4e2cec9f0f1c30f5037977e45658b",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "bcd7f34f066a1a43fde82ce41cf0dfb1dfac147269c03079d6c1aaea09757ff3",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479925
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -178242,10 +178242,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "674d7906edd4b7a07ea03eb1389037f8316a17d19d0d924411d556ff28589c82",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "3134ff8a7e6da2335763c64172d4071c224930c30190540deb86295fe43f9363",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770238
+          "timestamp_epoch_secs": 1778479925
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -183148,10 +183148,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "8a8138f5195c87e7c5bf9776b0d8784f7d871ecb1e2a50450cc691812cc5b2d0",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "1d48bdf33e7e0309f4373d789595859ef3bb4633ec52ebd50ca0b7ab86ea59e5",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479933
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -183370,10 +183370,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "242180f59ea4a527bcd44ed8f33492d1917fdacc8ffcb409a85d8bb06436d4cb",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "668213c9c8d6857b85f6da02b2b08951b1373044262c54f761c10053725b7d16",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479933
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -183382,10 +183382,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "1f335146828b92992cf507f7123d4fad8de313c82ef667888af8dd465c4a0c29",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "24eab68cb9bf77cdee95a4a98c055bef70a9307eaaeb22f4d30bd3fb18112f97",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770247
+          "timestamp_epoch_secs": 1778479933
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -188288,10 +188288,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "996904d90036e80c609fc154e24abef44373aad48f55f68f4bd1964f56aac3ee",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "94db42db11ac101bf87315dfbcbe0ae5d75c83f7d0dec95e3758698a3a0e539d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479937
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -188510,10 +188510,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "2d5f29c01c72a0c359314f9115bc04b4d883983ace9b02e2da00368633988547",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "398dea2b27d7fdff93a8dcff278d7e193e218ced14c49f55a5d5541ee8c0fb3a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479937
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -188522,10 +188522,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "97c87954dd92fbf9447894cacf72f8380c91b0e17030c7d839d295401957a2fe",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "ffc227c97081157223bd3ff3b265fb74ae9ca48d7d5ca483f72c250b002eb55c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770251
+          "timestamp_epoch_secs": 1778479937
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -193428,10 +193428,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "b1c3f98ad64c3b320d8d280169d7762557b8d18e4fa90c550348502dc3e8300f",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "aedad99b3010537c0dd0f4392e5e0d2ce3bbd71abeaed94b231a534923b2ee89",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479941
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -193650,10 +193650,10 @@
           "timestamp_epoch_secs": 1772361692
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "7c3ab664faba766a9732981a29f0f5bec0ae93e521b0547170e7480741582421",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "c577fcbad01ab1e213cc07482c3c7deb90c85a1945f5c0b059ccb0a5c37d64d0",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479941
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -193662,10 +193662,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "5a457de500ddd2413bdeba2285be678d7615487f7f40caaadfda4da7696f26ae",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "ca8ef974b73e240a0505e0c98887c09aea11d0d9a14ecb51e4f80bb10388f672",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770255
+          "timestamp_epoch_secs": 1778479941
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -198568,10 +198568,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "916bac8ed6a83854e227a94650fc257e37dea207535b979991f56449c9a33633",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "74e3cf084d93c7f7a95c8e44509a422aa84da54776cc99dae732c89c98cde0da",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479948
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -198790,10 +198790,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "c8a02c191c3e689c186e213d38570f4168d1f7b69b0676361100f84f2fb453e2",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "eb9b2b04c4440331e89974417269592b2475b52a1cc781747f2cddea196cbc56",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479948
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -198802,10 +198802,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "2a0df662323c635c99e21964090c1caa4fb20898508d0ce2e8c16ca0ddaaa69a",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "030728ea61b3e2458360e5d0b7b6ebff89db5de855b820ca7f54220bb2bdacaf",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770261
+          "timestamp_epoch_secs": 1778479948
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -203708,10 +203708,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "8767307fe44763987f7928ab784d15857fcfbb5f8525cc4c64e263da89c31be0",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "d4e7b4a3a449877f276ff18b4d6bd91b4653ffb1fb90521e0f9ae3899b55f562",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479954
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -203930,10 +203930,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "833506caf1e3befbc5bd0cfc6baa1a02ac85cfece4dbb1cc2aec68d7e9a03019",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "3824edec2b128646b6f23c4484c3db0a42be32e83f2510c5c7fefcd5d1b2bbb7",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479954
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -203942,10 +203942,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "152ef9adcbac4fff5e2f231282607d81dd66e06a82dbf6afb0245469106d3626",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "1465742d50ec4ec349e3b34359e435fe9bc10550d010e1dddd608218c38b615f",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770266
+          "timestamp_epoch_secs": 1778479954
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -208848,10 +208848,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "8adfbbd47c01bc51a77f9bdf4ffecf1d34198fbf04914aff4f8d5531ccff9408",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "f1ac3d1b03a66f3fae627abfab0bc6c96e263d5c417829b83e53aac45d31befe",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479958
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -209070,10 +209070,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "24aa15c79c46f0c53d89024322316c7b9286d30863612c5dc0f3ee2c8d194427",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "2c2032b0ac261ae2d34a9d973693f23e47dfceeb2517d188ccf91ec8fc9d4117",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479958
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -209082,10 +209082,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "59340436556ead3b7cdf8a40d2c7e6f7e486e47885451a6089c9d35544f02f3a",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "7be4b65c442fc94f8e33196038ebc922472c245f625a78dd1b9e36fbb77c77af",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770273
+          "timestamp_epoch_secs": 1778479958
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -213988,10 +213988,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "148501124a9fd26953b2b64b8abf9ee2402b4991fa0b47dcbe2471b9f6a9b33e",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "ed503cca7b46d59ff39989a831c2c9be8b910c043b07d23cebae2374ae9cc06a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479966
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -214210,10 +214210,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "920d23b5c1cc41ad182c1ffd7cbe9a21c217af55e1e08cdfbae80520f6197b45",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "7ddc31b7b382fb7ece9a990dec5128bf5b1f5198467bce63094943c118b6f4a4",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479966
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -214222,10 +214222,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "a378c1814a03da42e04a59f9162de8a52baf36da8895cecbc80a931942fceefa",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "65bdf7934d8afab083d0f91e148e7da407ec62cf04897230e55737c726620a19",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770280
+          "timestamp_epoch_secs": 1778479966
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -219128,10 +219128,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "178fd512a72bec98143628cfd2895207f5583a6bf70b1136b7eef0606b5668fc",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "4ac5bdd5950211b0c82f0be0128fc34e67ac78cd446f45b88f12492f7bc797a5",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479974
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -219350,10 +219350,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "e4bd5e4713cd2ec64b2dbee93c61708845b6e72c321a579df467c8fb4650d34e",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "f42e3b0f06ad3062ea0cdcfc8b0fb9001fb25fb8da645806865c6424775ccda4",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479974
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -219362,10 +219362,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "488c266d9fe3ddb19966267eec8537a09f4776bf1516fa12b4fa5d8a529e66be",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "2d207469fba20652c2415c14a1406537641cf0c8e92862a5f0dbe43848dd1bc9",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770288
+          "timestamp_epoch_secs": 1778479974
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -224268,10 +224268,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "61b4771201ecf94802993bdea022bcdbcb1eaf486d2e75821b513b945bfb1e42",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "9e53150579c4f1d739549aa1bc459ad7d681baa338ac28114fbc88f2148a6e21",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479980
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -224490,10 +224490,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "1d4ce01a38efeae8e7c0fd4d501fbff422cee133a78276b59a3d9ee4f792a52a",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "d7e088dcb8bb53f64d901bc64b6890138d4d236eda698f8bcf697c6a7863ffc2",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479980
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -224502,10 +224502,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "68960de8fd1fc056dc4c5536ee98e2d2a7249a5a2b9b819bdfb985bb845b8a07",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "3d1286c2b34a6d3461118d6daa9901728e7e81c516a6f2b80c7eef9e8b6b077a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770294
+          "timestamp_epoch_secs": 1778479980
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -229408,10 +229408,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "5ee66add787a1761fc6fddfca71d4fdcf504ed0a8c56dba453e81d558b868df6",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "7946c5aabcba87346ce282a7a35372c71fd5539c56fcd10d30929b073082ded9",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479985
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -229630,10 +229630,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "631133db7f151b21c5ea70199e0cd9ea5d0b42dc1e73d9ece973b8411038bf72",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479985
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -229642,10 +229642,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "f15ca6d91f90da759ca0e0e2c003aad50a15bfdb01265a582a9b8e925455fdb3",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "976068aa806f6ce3170168cb2cbc355d68f4b23a6466252eef8c4209c4bb4568",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770297
+          "timestamp_epoch_secs": 1778479985
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -235392,10 +235392,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "b9d76789a7d50e47cddef930ed7c13b4252909f52d477566127eacd618856815",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "510a7bb109ab3aa375183769a5b97fe35d76d416f3715a3d185aad6bb6d7091d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479989
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -235614,10 +235614,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "ce90fe8fd8e61e38bac1df53bd8e278c5cc269053a0543697f082182d7ed142c",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "8aec08c5551bcc83a856231c0071d2a71b0857c42654bbe76cb9aed1fe2c7761",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479989
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -235626,10 +235626,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "300df3e9d762e69fb855feb226253d758c8d345c01758cb17e72b3287df2e098",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "eb7d3d049f03a52a8840ecc4ec307bb30e66eea304bba9a12940479515344ce7",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770302
+          "timestamp_epoch_secs": 1778479989
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -240532,10 +240532,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "53720e8d11fbbecac12a93934ea542238997f55a0b7b04712f6d3f6661d76f71",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "30c3a5b79186341d4255c275f0a8d2e4226318ca62f95b3d46ae413bf815ab9d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479995
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -240754,10 +240754,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "e0bc4dca4a8aced8c88e9ed3a7f5d44ea7b17cd6fcc54525952bd03443718f49",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "5163930a5bd238eadbe25f423f5b23313a9c3c421bf882eed00b08b9ecba0989",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479995
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -240766,10 +240766,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "9cf53ce38d6557fc72cf2685f9fbffd3816ee793dfc0c15929ba7af3e42aeaf6",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "79352ea0be2b734fc12c8c61ecbec57d32d7305da7d7047b7d17be3811906ef9",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770327
+          "timestamp_epoch_secs": 1778479995
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -245672,10 +245672,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "14947878a368fb51f3ad8ffc127eaeededeea5bdc39a1b2901434fd0a61e1d54",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "b0f5cf249518ee5d7f15dcb7d16066fd73f83d6b9d5df4662f3e9c0708e1c2ed",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479999
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -245894,10 +245894,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "35badd272571898d1a08e21777bd653f5f38902aec1a52bad200dadc4d53a96f",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "7da94b013f8f62ee184e4b0ff5e084a43cbeabe484b3346886d563b1e4c5d2aa",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778479999
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -245906,10 +245906,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "5b1a2c1a35ce0adb5eed9fa42d1a7ed18fc8325ac8cb4c4c6d222234406c4acf",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "cf3680dbdd0855f0c7132ca65dfa2c54bf44d1aee3e9e0f2e3628414bc7f849a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770331
+          "timestamp_epoch_secs": 1778479999
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -250812,10 +250812,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "a420b4da57a9ff387de34aa3179c9cca402feab9fe4c47acc0b09590c6b734bd",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "a55bc721638d9d60e2f39668fbb319a69d1f98f70791b59b69d6696523b4192a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480002
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -251034,10 +251034,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "3c79b6818e08a28ed2751a698af1d8182bb476aee2442d8573c65ac66236a26d",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "8645e0feb8480c45ea7b394a2881113270e9b46cddf535aa053ed5eb235a7a90",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480002
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -251046,10 +251046,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "fea4cb1e6d60a4b5c4dab29b2b27b1942aaf31f1e7f3fddb8a0264d1a5fbcf1c",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "3ff37cbf011af7f31a5db1a83115b0a5eaca2f4f00eb7ad3b87f4735c5fa084c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770335
+          "timestamp_epoch_secs": 1778480002
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -255952,10 +255952,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "10ef6a1c42b9a70f1fe303035aa13f26a90e3b218c4404a8d2c66ad7835d5a2f",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "d1e3b2bb58a908db7702395f35ffa2ee7889d244a8a302e9c909ebd2b2b56fc0",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480009
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -256174,10 +256174,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "4258e51ca8c1e623270d09fc30a43fbc20c9a754df5b20ae81f318e8f05d0bcc",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "9e62cc256da45cd70214f70b40ad1e2b96c120c38582e0d3401f4e281cd3db35",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480009
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -256186,10 +256186,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "6945af40d979f82d75f8db7ab38786daa83379f375cced836a5beccb64372ded",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "e2c1899c91387c2e8ffacb37fc1379ddd2cd1bc0e14eace649fdd9316eedae97",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770341
+          "timestamp_epoch_secs": 1778480009
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -261092,10 +261092,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "becf6edf224f5f91a91045a6b11891bcb6b19205b8487739fd7022c27bb35ce1",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "26219625ce2f804fafd5cf48007575ca6a968bfb39f5a183f4c8297767208b69",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480013
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -261314,10 +261314,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "9c1dc4428991965eb556184feb706bc880294753fb019048688440e2b3c7bd14",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "b9af2fec724df0b412966ee7bd3a0be98ec4bd15957301cce6bc8fd56df01fb5",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480013
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -261326,10 +261326,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "f758a3abfed84e4728db424765dd920c5ac18428914dd0a7d03cfdb79a127398",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "479c758a1146d8f8fb8a6887654212738b7eee11c8d9c0aa2a1c5519bbbbf48b",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770346
+          "timestamp_epoch_secs": 1778480013
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -266232,10 +266232,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "338be4afd1698c86f2b4740e6b7dae70e09620a06740d01932dba48690ebc95a",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "d26fc062e4e377a6bdcdf935e9f92a6ed4a60ffc599f48d50922c224abc23a22",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480017
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -266454,10 +266454,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "d86d3941747b6887d9c9ba8022ccda8f078d25cfbcc7f4c5eb537ab4ad15f157",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "59372b63e8fa978313686549e409840df8c7aac05c03e28db7f889505941be69",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480017
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -266466,10 +266466,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "a29c69c2a9b5cf94f671d17ce0366f84c85a731c7e96d0532a387dd8b42ea8fa",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "230b4437c3d70df56f2ec6f940086ad32e20f324695dd7cc8afe4e86e657b3da",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770350
+          "timestamp_epoch_secs": 1778480017
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -271372,10 +271372,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "bdb84b33a47a890140d4d8b0a8077be4947999a5386d7abf2b6bfff00217bdaf",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "5d1221e2a51b2968a1f2a9ffcbea6b74ec7268fbc243cd94de28c73cea9a6cdf",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480025
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -271594,10 +271594,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "db99beaf3cbae026d3276c42cb2997f1e3453a1e2603cbfac99e8f419237a619",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "c01a88d8af4b408cb7aab84b6e2b48349a52e8ee066d7770a8b353629366683b",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480025
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -271606,10 +271606,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "9be10be120180791e1cb9c40b05119a4484eae41ae3626a0236164ee8e834a1f",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "ebe760457acee40f38389df32dc6ed9e94942d713f965ce14eb6ceb92ffb5e49",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770356
+          "timestamp_epoch_secs": 1778480025
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -276512,10 +276512,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "4d9e0ff9b22af626d09bc9040fadfaa111edfb813ec75a4aba50ac0f20f83f6c",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "ece8a101e84eec20c5c79a380bfd473e358e04b409deea9247d7f72dab12d680",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480029
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -276734,10 +276734,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "aa8f6486a0a1657de88e498678bce7f5c5dc48f24d16e68ceaaf5757e36af433",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "a83cf9474ac81d53c1fba87f58c20254ca9e9ceea9772b121b4ad212ea624449",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480029
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -276746,10 +276746,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "898728e99422a3271515b0ff3fd38d9f31f8c2a567bdf0a758819ed5c4dafacb",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "efd151e4ed3fc5f0653c5f7feef337d295ea9f56d55432552b29023a0f2e0334",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770360
+          "timestamp_epoch_secs": 1778480029
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -281652,10 +281652,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "ca4dbc361ea618696a0287cc13e91f4ff12579f4c1214cc051818f7e97ca48d9",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "10253bdc5146f7cbc35051ffa1dc936d4eb87609425abe43fe051794d7aa0b26",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480033
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -281874,10 +281874,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "57504b549bebd111c4b36e0bf457609134aa096dc417669c12ef56a919e89c7c",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "2813182ee2c56ab5180eb54cbbeed6508a7418cc2cf6d957cf73badeee2459f6",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480033
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -281886,10 +281886,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "6473db87d38bd986edbf0815190c787cf5ecb329a4c8fa0fb116c7c602b7da30",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "421e8e68ea2af964dbca1f643f17552b8a6484e89f0929ca66c8ee619ca30ede",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770365
+          "timestamp_epoch_secs": 1778480033
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -286792,10 +286792,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "5c9461b693caefa790afb176f260c4cd9e3b29bdcbc02c88f1fa487139baf236",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "e44ba9c8755ac1d9793f74cda09c36a8751c94cd58b69f652250a7608635196d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480037
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -287014,10 +287014,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "8614b22879dab9f988646336838025c692b166890cc29a08a6345ac82bdb3894",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "0fa16a2aae439b5d021d5d5c26497e83fa22736f009761442e8d38d973f2218d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480037
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -287026,10 +287026,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "ab909a836de6035eb4124af7c426c35d9f94d3541354e7511b9a3044299e0afc",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "685c3fcc25036d8ea94756b81ef42c3fa30a80f62fd9a5f1e6cc201d4859b17b",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770369
+          "timestamp_epoch_secs": 1778480037
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -291932,10 +291932,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "2c6dc2d94d15abfc5a282b274a5801e9e9771cdc641e379da8bce772cb9c8cc1",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "b3a546c4cce6bf95e774ea8e381b764aa29afcc2d2a44537438bfe4255278d8c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480043
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -292154,10 +292154,10 @@
           "timestamp_epoch_secs": 1772361693
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "d441af3d156e5550ccfa42b213925a8b88f542ca681060e8f837ddb6d2daac1c",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "f41606ea122aecc4eaa4f63085b0ae169e1c28605251515e6be0a8819fee2bdb",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480043
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -292166,10 +292166,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "e8537ad3b52d8e0789d4212f694ae4a8b3679f9726cf1c1a46d9bff9749eb139",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "49cd99356c875112ac0583bcf287e6184f7cd2fd4829066607f9e0a57400ad5f",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770379
+          "timestamp_epoch_secs": 1778480043
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -297072,10 +297072,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "91db9fbae9898090b750c13e41ffd545665cfb2decb0bac03212c28c9ab39079",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "adf5a96653939878a1ce6e9b15bc0129e0ddd25c98a3c2d5faf5c0da516fcc62",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480050
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -297294,10 +297294,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "aac2b3a73920cde0fa158f1dbd47f2e0e16ddd2a3f749ac8ae29aefcadce4df6",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "e26020de6dc7fcf4e77adb4cbe9b9e5b3f1cde605109602c9c6a8dbc0551d51c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480050
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -297306,10 +297306,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "136e9a57608c807162a0fc695e981c683afb8e7c59748515e07daae8c4a6b62a",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "85dcf2f6c9e582b3914284e321a64c1d4f861c71c3ad1bda30da97f52950acdd",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770384
+          "timestamp_epoch_secs": 1778480050
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -302212,10 +302212,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "73db9b5c1b3c41185aa5193306731fbc20c0038dbc07f3c0829f589434fab187",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "3c056995119fd527cd6cd9eb034a2210da84f96212a7b9d222cdc49240f798f2",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480054
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -302434,10 +302434,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "41f8575e2fd48b6f53a1583a5f90640a13835007b61a4d2a961c050d4a4d1f7f",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "406fdf0c00c851a4f062ebff13c6a0d752243318078536ac8eac0ffff903e22c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480054
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -302446,10 +302446,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "ad675df8dd135e578ba4714c86852331ebc62969a029b787c941cdb1a6a03135",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "c9c612c0a237f40686e488ed1640d9aad2cd7465db2e98b3756a528b089cb79a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770391
+          "timestamp_epoch_secs": 1778480054
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -307352,10 +307352,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "8e3193f7580ace04f8924be732becc5aa03724e1366fc35c3d4f7a736d317765",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "74f4ebb4128ad02030f6037193b43a40dff6bb4b5cd14380d3b8854f83e911bb",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480057
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -307574,10 +307574,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "09ead5f6cf9517fe8521e5c8e64da5d83ea1e842a8e7559c3ce71d59a7496988",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "fc551c67644cb2da7f73da56c16d971619ca20a74ac0ed9b13e6a0f16123ccf4",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480057
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -307586,10 +307586,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "dd53923ddc53f981886e3551b8167e52821d95046003281cf0046a705089b418",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "d2b50cf4b4ae0053fe25723d2b52913db66d0c0768f9cb27083ac3fc52671487",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770398
+          "timestamp_epoch_secs": 1778480057
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -312492,10 +312492,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "0e519b915f1ff1d2a96fd2b3f894fc753f8f55fe9a40c810376b498b05f0b563",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "c661b966718edc8ece7f15664efe3a5168ceab7d1f948a8fa3e76f97a9fb04c3",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480060
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -312714,10 +312714,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "970c06e71850e45e49c577b7f402cf1b1a22497cc909444c14b8a45d256cac06",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "1faf05ad58b85bf814986c0126d6e16893d1f00324c73bfe431647357bb27f9a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480060
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -312726,10 +312726,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "5b875bbb99348842f81280e8eec2aa7f8b570f97b2155fd061e46809d55b4f87",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "d92db37d7350dc6cf6f721534fad4ef4c1c5da22948d6540fe3bfffc2e8fb49d",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770403
+          "timestamp_epoch_secs": 1778480060
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -317632,10 +317632,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "fa7f05ee1f2dbed09ce8cfb4fd0aadaf9145cdf2eca00772b364fb89217902e4",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "ec66c7bda22de42772be5b89476f2d77c44ae3517e84c2f7d9a80468df38b55c",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480064
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -317854,10 +317854,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "c77a1a3443b56c56e873481104f0bc0a4c7978bd93f33079a06d7bf1d16bb7de",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "26fa613d9449f2c7349df89d8044c2cac441c8b738b20a733406025b49e4c947",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480064
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -317866,10 +317866,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "54848266132e89ba81ca3bccd13a8aecd732f6a4f1c43353abbc79f41bba143d",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "f05c22f3c59ee996bbddb7a1b95c423b0938a88fa2459dc28a5f3cac167a4c28",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770410
+          "timestamp_epoch_secs": 1778480064
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -322772,10 +322772,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "c229e1db6bf91c5fa747ae15405473457af40bf5c26e9189310f7cac33a4c6f3",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "9f92b3a181ffed97b203a88e7f20af849b41489f893428007b44c9abda759cf5",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480070
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -322994,10 +322994,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "9bc40ceeba5b425c1edc86239b05428576cfffb0b81b9bdb9796b9b1c3d373c5",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "759b21360c353cf7ac9998c7b687685ef20abd3d775427eb1a3601c4207cfb14",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480070
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -323006,10 +323006,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "885eade224ec66f90c3587e35089c6441dbaf844ff18b17d0befdf44471d228a",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "39d6fdabd5bb1427712229fa99bd29e3cd1362e4b18cd94a233b8078f4a36ac4",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770414
+          "timestamp_epoch_secs": 1778480070
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -327912,10 +327912,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "a7c87802f2ac58d707348c84bc6eee85a7b529da4bbfbe40586df195b754f070",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "de2550e23e9134ea3357e2c60f3167583e01a94f95977b9af1598774962dc37a",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480073
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -328134,10 +328134,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "0c7bd22471561fa08878602573e0e22b53eca3697e41eaa0f402b5d56061db97",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "dae38c670420df414c021f9e551322371d547ad1686c881ca2a16250b5059121",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480073
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -328146,10 +328146,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "b7d9a4f7ca9d99e7f4a5a9e576040f5bbc366ac2abeaf23eb5bfb4f8ed680374",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "c2b6f936ca2db5261f4e769cda7cf71cf944cbfb5420f4d3c8dfd2c069cfc9a7",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770420
+          "timestamp_epoch_secs": 1778480073
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
@@ -333052,10 +333052,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.command.help": {
-          "last_english_hash": "1ced89f1da77134bf3ddfca69d59f4af949ec2f18fdd13eeb6bb2f0fb0a82637",
-          "last_bot_translation_hash": "50d42b5ae03a9466c3757d96c91fba33e9587c95bee52b3054fed8dcda2f9386",
+          "last_english_hash": "4e911b7d2d68986608c07c5ae47e17bfa5cef0b0231e5a58100275001bb0198a",
+          "last_bot_translation_hash": "8b07c5a09c54bbab6274474b665df557af54cbef50b65ad4d7786350b269b9fa",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480077
         },
         "cli.help.command.inspect": {
           "last_english_hash": "d26cb1f6bd1a5ac4ed5a79d19207546b788a87970c43759e439176ba68776818",
@@ -333274,10 +333274,10 @@
           "timestamp_epoch_secs": 1772361694
         },
         "cli.help.option.help": {
-          "last_english_hash": "cc70d35022ddd5d925555f0bcbb9ce22b9f60b5171435082ffcf51f7783a5b5d",
-          "last_bot_translation_hash": "c6704f9520e38aba53eb390f32733c21b41050ba9ef80c78c9564cb4f3377ae8",
+          "last_english_hash": "632987180d219424fa7b9150a63e45f37707b61557d5895caa2239b6e39d48fa",
+          "last_bot_translation_hash": "90037170edd8fe54001de148e0ed7cec8660308801ed7499640d7797cbaafebe",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1772214506
+          "timestamp_epoch_secs": 1778480077
         },
         "cli.help.option.json": {
           "last_english_hash": "009a0e8a1e9c1140ed15a066cd4370f208d11706cc7404c951e7dbf577db34a8",
@@ -333286,10 +333286,10 @@
           "timestamp_epoch_secs": 1772214506
         },
         "cli.help.option.locale": {
-          "last_english_hash": "e17e2232cafc1d167ffdbf99928953966a6984c5f90dfa8fe61b5882de7d755b",
-          "last_bot_translation_hash": "011c497732301782084d79f11168758f062af89cb3290b3a2e8309b125347ca3",
+          "last_english_hash": "71b28881a5f837c6c8f847b6d28836813381783a182a3f0fa440b009fd2a68dd",
+          "last_bot_translation_hash": "cf7d44e71dec5cd5b76a5c13fa6fb81d0dc8558517431915b05d3bc182f45962",
           "engine": "codex-cli",
-          "timestamp_epoch_secs": 1773770427
+          "timestamp_epoch_secs": 1778480077
         },
         "cli.help.option.log": {
           "last_english_hash": "d9b80f12bddde38413ead0ee4d32ccfd913541d5ccf77f402bf7099a838b78fd",
