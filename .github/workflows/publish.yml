@@ -4,6 +4,14 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      include_macos_intel:
+        description: >-
+          Also build the Intel macOS binary (x86_64-apple-darwin) on the costly
+          macos-15-intel runner. OFF by default to save Actions cost; enable for
+          a final release that must ship every binary.
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -77,31 +85,43 @@ jobs:
           chmod +x ./publish.sh
           ./publish.sh
 
+  # The Intel macOS leg (x86_64-apple-darwin on the costly macos-15-intel
+  # runner — bills ~10x Linux) is OFF by default: most consumers are on Apple
+  # Silicon. Re-enable it for a final all-binary release by running this
+  # workflow manually with `include_macos_intel: true`.
+  resolve-matrix:
+    name: Resolve build matrix
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - name: Resolve target matrix
+        id: matrix
+        shell: bash
+        env:
+          INCLUDE_INTEL: ${{ github.event_name == 'workflow_dispatch' && inputs.include_macos_intel }}
+        run: |
+          set -euo pipefail
+          targets='[
+            {"runner":"ubuntu-24.04","target":"x86_64-unknown-linux-gnu","archive_format":"tgz"},
+            {"runner":"ubuntu-24.04-arm","target":"aarch64-unknown-linux-gnu","archive_format":"tgz"},
+            {"runner":"macos-15","target":"aarch64-apple-darwin","archive_format":"tgz"},
+            {"runner":"windows-2022","target":"x86_64-pc-windows-msvc","archive_format":"zip"},
+            {"runner":"windows-11-arm","target":"aarch64-pc-windows-msvc","archive_format":"zip"}
+          ]'
+          if [ "$INCLUDE_INTEL" = "true" ]; then
+            targets="$(printf '%s' "$targets" | jq -c '. + [{"runner":"macos-15-intel","target":"x86_64-apple-darwin","archive_format":"tgz"}]')"
+          else
+            targets="$(printf '%s' "$targets" | jq -c '.')"
+          fi
+          echo "matrix={\"include\":${targets}}" >> "$GITHUB_OUTPUT"
+
   build-release-artifacts:
     name: Build release binaries (${{ matrix.target }})
-    needs: [prepare, publish-crates]
+    needs: [prepare, publish-crates, resolve-matrix]
     strategy:
       fail-fast: false
-      matrix:
-        include:
-          - runner: ubuntu-24.04
-            target: x86_64-unknown-linux-gnu
-            archive_format: tgz
-          - runner: ubuntu-24.04-arm
-            target: aarch64-unknown-linux-gnu
-            archive_format: tgz
-          - runner: macos-15-intel
-            target: x86_64-apple-darwin
-            archive_format: tgz
-          - runner: macos-15
-            target: aarch64-apple-darwin
-            archive_format: tgz
-          - runner: windows-2022
-            target: x86_64-pc-windows-msvc
-            archive_format: zip
-          - runner: windows-11-arm
-            target: aarch64-pc-windows-msvc
-            archive_format: zip
+      matrix: ${{ fromJSON(needs.resolve-matrix.outputs.matrix) }}
     runs-on: ${{ matrix.runner }}
     steps:
       - name: Checkout
