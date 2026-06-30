@@ -3,13 +3,13 @@ resolver = "3"
 members = [
     "crates/greentic-i18n-lib",
     "crates/greentic-i18n",
+    "crates/greentic-i18n-cards",
     "crates/greentic-i18n-translator",
 ]
 
 [workspace.package]
-version = "0.5.1"
+version = "1.2.0"
 edition = "2024"
-
 
 [workspace.dependencies]
 assert_cmd = "2"
@@ -18,4 +18,10 @@ serde = "1"
 blake3 = "1"
 data-encoding = "2"
 clap = "4"
-greentic-i18n-lib = { version = "0.5", path = "crates/greentic-i18n-lib" }
+walkdir = "2"
+anyhow = "1"
+tempfile = "3"
+
+[workspace.dependencies.greentic-i18n-lib]
+version = ">=1.2.0-0, <1.3.0-0"
+path = "crates/greentic-i18n-lib"
