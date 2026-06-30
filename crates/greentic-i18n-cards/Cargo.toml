@@ -1,0 +1,17 @@
+[package]
+name = "greentic-i18n-cards"
+version.workspace = true
+edition.workspace = true
+license = "MIT"
+description = "Adaptive Card i18n primitives for Greentic: extract translatable strings and drive greentic-i18n-translator to produce locale bundles."
+repository = "https://github.com/greentic-ng/greentic-i18n"
+homepage = "https://github.com/greentic-ng/greentic-i18n"
+documentation = "https://docs.rs/greentic-i18n-cards"
+keywords = ["i18n", "localization", "greentic", "adaptive-cards"]
+readme = "README.md"
+
+[dependencies]
+serde_json = { workspace = true }
+walkdir = { workspace = true }
+anyhow = { workspace = true }
+tempfile = { workspace = true }
