@@ -18,7 +18,10 @@ fn write_exec(path: &Path, body: &str) {
 // Stub translator: copies the --en bundle to <lang>.json next to it.
 fn ok_stub(dir: &Path) -> std::path::PathBuf {
     let p = dir.join("ok-translator.sh");
-    write_exec(&p, "#!/bin/sh\nlang=\"\"; en=\"\"\nwhile [ $# -gt 0 ]; do case \"$1\" in --langs) lang=\"$2\"; shift 2;; --en) en=\"$2\"; shift 2;; *) shift;; esac; done\ncp \"$en\" \"$(dirname \"$en\")/$lang.json\"\n");
+    write_exec(
+        &p,
+        "#!/bin/sh\nlang=\"\"; en=\"\"\nwhile [ $# -gt 0 ]; do case \"$1\" in --langs) lang=\"$2\"; shift 2;; --en) en=\"$2\"; shift 2;; *) shift;; esac; done\ncp \"$en\" \"$(dirname \"$en\")/$lang.json\"\n",
+    );
     p
 }
 
@@ -59,10 +62,14 @@ fn resolve_and_available_honour_env_override() {
     let tmp = tempfile::tempdir().unwrap();
     let stub = ok_stub(tmp.path());
     // SAFETY: integration test; var removed before assertions.
-    unsafe { std::env::set_var("GREENTIC_I18N_TRANSLATOR_BIN", &stub); }
+    unsafe {
+        std::env::set_var("GREENTIC_I18N_TRANSLATOR_BIN", &stub);
+    }
     let resolved = resolve_translator();
     let available = is_translator_available();
-    unsafe { std::env::remove_var("GREENTIC_I18N_TRANSLATOR_BIN"); }
+    unsafe {
+        std::env::remove_var("GREENTIC_I18N_TRANSLATOR_BIN");
+    }
     assert_eq!(resolved.as_deref(), Some(stub.as_path()));
     assert!(available);
 }
@@ -70,8 +77,16 @@ fn resolve_and_available_honour_env_override() {
 #[test]
 fn write_manifest_is_sorted_deduped_and_includes_en() {
     let tmp = tempfile::tempdir().unwrap();
-    write_manifest(tmp.path(), &["ja".to_string(), "id".to_string(), "id".to_string()]).unwrap();
+    write_manifest(
+        tmp.path(),
+        &["ja".to_string(), "id".to_string(), "id".to_string()],
+    )
+    .unwrap();
     let got: Vec<String> =
-        serde_json::from_str(&fs::read_to_string(tmp.path().join("_manifest.json")).unwrap()).unwrap();
-    assert_eq!(got, vec!["en".to_string(), "id".to_string(), "ja".to_string()]);
+        serde_json::from_str(&fs::read_to_string(tmp.path().join("_manifest.json")).unwrap())
+            .unwrap();
+    assert_eq!(
+        got,
+        vec!["en".to_string(), "id".to_string(), "ja".to_string()]
+    );
 }
