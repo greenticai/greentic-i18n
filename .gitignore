@@ -7,6 +7,7 @@
 all-dependabot-alerts.json
 all-code-scanning-alerts.json
 dependabot-alerts.json
+temp_auto_push.bat
 code-scanning-alerts.json
 pr-code-scanning-filtered.json
 pr-changed-files.txt
@@ -17,3 +18,5 @@ DEPENDENCY_FIX_REPORT.md
 semver-output.txt
 SEMVER_FIX_REPORT.md
 .i18n/
+.gitignore
+branch_structure.json

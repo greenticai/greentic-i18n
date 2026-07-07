@@ -80,7 +80,10 @@ pub fn translate_to_language(
         .context("failed to execute greentic-i18n-translator")?;
     if !output.status.success() {
         let stderr = String::from_utf8_lossy(&output.stderr);
-        bail!("translator exited non-zero for {lang}: {}", stderr.trim_end());
+        bail!(
+            "translator exited non-zero for {lang}: {}",
+            stderr.trim_end()
+        );
     }
     Ok(())
 }
