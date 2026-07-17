@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "nav atrastas mērķa valodas",
   "cli.help.command.diff": "Salīdzināt atslēgas starp base/head atsaucēm angļu avota kartei",
-  "cli.help.command.help": "Drukāt šo ziņojumu vai dotās apakškomandas palīdzību",
+  "cli.help.command.help": "Parādīt šo ziņojumu vai norādītās(-o) apakškomandas(-u) palīdzību",
   "cli.help.command.status": "Ziņot par trūkstošiem vai novecojušiem tulkojumiem, izmantojot tulkotāja stāvokļa metadatus",
   "cli.help.command.translate": "Ģenerēt/atjaunināt tulkojumus, izmantojot nodrošinātāja integrāciju ar kešatmiņas/stāvokļa drošību",
   "cli.help.command.validate": "Validēt tulkoto valodu failus pret angļu formāta invariantēm",
@@ -10,7 +10,7 @@
   "cli.help.diff.option.head": "Salīdzināmā head git atsauce",
   "cli.help.diff.options": "Opcijas:",
   "cli.help.diff.usage": "Lietošana: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
-  "cli.help.option.help": "Drukāt palīdzību",
+  "cli.help.option.help": "Parādīt palīdzību",
   "cli.help.option.locale": "Lokalizācija izpildlaika ziņojumiem un pielāgotai palīdzības izvadei",
   "cli.help.status.option.en": "Ceļš uz angļu avota kartes JSON failu",
   "cli.help.status.option.langs": "Ar komatiem atdalīts valodu saraksts vai `all`",

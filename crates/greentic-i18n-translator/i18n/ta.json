@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "இலக்கு மொழிகள் எதுவும் தீர்மானிக்கப்படவில்லை",
   "cli.help.command.diff": "ஆங்கில மூல மேப்பிற்காக base/head refகளுக்கு இடையிலான key வேறுபாடுகளை காண்",
-  "cli.help.command.help": "இந்த செய்தியை அல்லது கொடுக்கப்பட்ட துணைக் கட்டளை(கள்)க்கான உதவியை அச்சிடு",
+  "cli.help.command.help": "இந்தச் செய்தியை அல்லது கொடுக்கப்பட்ட துணைக் கட்டளை(களி)ன் உதவியை அச்சிடு",
   "cli.help.command.status": "மொழிபெயர்ப்பாளர் நிலை metadata-ஐ பயன்படுத்தி இல்லை அல்லது காலாவதியான மொழிபெயர்ப்புகளை அறிக்கை செய்",
   "cli.help.command.translate": "cache/state பாதுகாப்புடன் provider ஒருங்கிணைப்பின் மூலம் மொழிபெயர்ப்புகளை உருவாக்கு/புதுப்பி",
   "cli.help.command.validate": "ஆங்கில வடிவ invariants-க்கு எதிராக மொழிபெயர்க்கப்பட்ட மொழி கோப்புகளை சரிபார்",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "விருப்பங்கள்:",
   "cli.help.diff.usage": "பயன்பாடு: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "உதவியை அச்சிடு",
-  "cli.help.option.locale": "இயக்கநேரச் செய்திகள் மற்றும் தனிப்பயன் உதவி வெளியீட்டிற்கான locale",
+  "cli.help.option.locale": "இயக்கநேரச் செய்திகள் மற்றும் தனிப்பயன் உதவி வெளியீட்டிற்கான மொழிப்பிரதேசம்",
   "cli.help.status.option.en": "ஆங்கில மூல மேப் JSON கோப்பின் பாதை",
   "cli.help.status.option.langs": "கமாவால் பிரிக்கப்பட்ட மொழிப் பட்டியல், அல்லது `all`",
   "cli.help.status.options": "விருப்பங்கள்:",
