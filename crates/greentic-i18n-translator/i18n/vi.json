@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "không xác định được ngôn ngữ đích nào",
   "cli.help.command.diff": "So sánh các khóa giữa ref base/head cho bản đồ nguồn tiếng Anh",
-  "cli.help.command.help": "In thông báo này hoặc trợ giúp của (các) lệnh con được chỉ định",
+  "cli.help.command.help": "In thông báo này hoặc phần trợ giúp của (các) lệnh con đã cho",
   "cli.help.command.status": "Báo cáo các bản dịch thiếu hoặc lỗi thời bằng metadata trạng thái trình dịch",
   "cli.help.command.translate": "Tạo/cập nhật bản dịch qua tích hợp nhà cung cấp với độ an toàn cache/trạng thái",
   "cli.help.command.validate": "Xác thực các tệp ngôn ngữ đã dịch theo các bất biến định dạng tiếng Anh",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Tùy chọn:",
   "cli.help.diff.usage": "Cách dùng: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "In trợ giúp",
-  "cli.help.option.locale": "Locale cho thông báo runtime và đầu ra trợ giúp tùy chỉnh",
+  "cli.help.option.locale": "Ngôn ngữ cho thông báo khi chạy và nội dung trợ giúp tùy chỉnh",
   "cli.help.status.option.en": "Đường dẫn đến tệp JSON bản đồ nguồn tiếng Anh",
   "cli.help.status.option.langs": "Danh sách ngôn ngữ phân tách bằng dấu phẩy, hoặc `all`",
   "cli.help.status.options": "Tùy chọn:",
