@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "не визначено цільових мов",
   "cli.help.command.diff": "Порівняти ключі між базовим/головним ref для англійської карти джерела",
-  "cli.help.command.help": "Вивести це повідомлення або довідку для вказаної підкоманди(підкоманд)",
+  "cli.help.command.help": "Вивести це повідомлення або довідку для вказаних підкоманд",
   "cli.help.command.status": "Звіт про відсутні або застарілі переклади за метаданими стану перекладача",
   "cli.help.command.translate": "Створити/оновити переклади через інтеграцію з провайдером із безпечним кешем/станом",
   "cli.help.command.validate": "Перевірити файли перекладу на відповідність інваріантам формату англійської",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Параметри:",
   "cli.help.diff.usage": "Використання: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Вивести довідку",
-  "cli.help.option.locale": "Локаль для повідомлень під час виконання та власного виводу довідки",
+  "cli.help.option.locale": "Локаль для повідомлень під час виконання та спеціального виводу довідки",
   "cli.help.status.option.en": "Шлях до JSON-файлу англійської карти джерела",
   "cli.help.status.option.langs": "Список мов, розділений комами, або `all`",
   "cli.help.status.options": "Параметри:",

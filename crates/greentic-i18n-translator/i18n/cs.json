@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "nebyly určeny cílové jazyky",
   "cli.help.command.diff": "Porovná klíče mezi base/head referencemi pro anglickou zdrojovou mapu",
-  "cli.help.command.help": "Vypíše tuto zprávu nebo nápovědu pro zadaný podpříkaz(y)",
+  "cli.help.command.help": "Vypíše tuto zprávu nebo nápovědu k zadaným dílčím příkazům",
   "cli.help.command.status": "Nahlásí chybějící nebo zastaralé překlady pomocí metadat stavu překladače",
   "cli.help.command.translate": "Vygeneruje/aktualizuje překlady přes integraci poskytovatele se zabezpečením cache/stavu",
   "cli.help.command.validate": "Ověří přeložené jazykové soubory vůči invariantům anglického formátu",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Možnosti:",
   "cli.help.diff.usage": "Použití: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Vypíše nápovědu",
-  "cli.help.option.locale": "Lokalizace pro runtime zprávy a vlastní výstup nápovědy",
+  "cli.help.option.locale": "Národní prostředí pro zprávy za běhu a vlastní výstup nápovědy",
   "cli.help.status.option.en": "Cesta k JSON souboru anglické zdrojové mapy",
   "cli.help.status.option.langs": "Čárkami oddělený seznam jazyků nebo `all`",
   "cli.help.status.options": "Možnosti:",

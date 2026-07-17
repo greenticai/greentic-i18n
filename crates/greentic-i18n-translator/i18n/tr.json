@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "hedef dil çözümlenmedi",
   "cli.help.command.diff": "İngilizce kaynak haritası için base/head referansları arasındaki anahtarları karşılaştır",
-  "cli.help.command.help": "Bu mesajı veya verilen alt komut(lar)ın yardımını yazdır",
+  "cli.help.command.help": "Bu mesajı veya belirtilen alt komutların yardımını yazdır",
   "cli.help.command.status": "Çevirmen durum meta verilerini kullanarak eksik veya güncelliğini yitirmiş çevirileri raporla",
   "cli.help.command.translate": "Önbellek/durum güvenliğiyle sağlayıcı entegrasyonu üzerinden çevirileri oluştur/güncelle",
   "cli.help.command.validate": "Çevrilmiş dil dosyalarını İngilizce biçim değişmezlerine karşı doğrula",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Seçenekler:",
   "cli.help.diff.usage": "Kullanım: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Yardımı yazdır",
-  "cli.help.option.locale": "Çalışma zamanı iletileri ve özel yardım çıktısı için yerel ayar",
+  "cli.help.option.locale": "Çalışma zamanı mesajları ve özel yardım çıktısı için yerel ayar",
   "cli.help.status.option.en": "İngilizce kaynak haritası JSON dosyasının yolu",
   "cli.help.status.option.langs": "Virgülle ayrılmış dil listesi veya `all`",
   "cli.help.status.options": "Seçenekler:",

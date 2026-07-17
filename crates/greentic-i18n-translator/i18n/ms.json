@@ -11,7 +11,7 @@
   "cli.help.diff.options": "Pilihan:",
   "cli.help.diff.usage": "Penggunaan: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "Cetak bantuan",
-  "cli.help.option.locale": "Locale untuk mesej runtime dan output bantuan tersuai",
+  "cli.help.option.locale": "Penempatan untuk mesej masa jalan dan output bantuan tersuai",
   "cli.help.status.option.en": "Laluan ke fail JSON peta sumber bahasa Inggeris",
   "cli.help.status.option.langs": "Senarai bahasa dipisahkan koma, atau `all`",
   "cli.help.status.options": "Pilihan:",
