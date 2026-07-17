@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "មិនមានភាសាគោលដៅដែលបានកំណត់",
   "cli.help.command.diff": "ប្រៀបធៀបសោររវាង base/head refs សម្រាប់ផែនទីប្រភពភាសាអង់គ្លេស",
-  "cli.help.command.help": "បោះពុម្ពសារនេះ ឬជំនួយរបស់អនុបញ្ជាដែលបានផ្តល់",
+  "cli.help.command.help": "បោះពុម្ពសារនេះ ឬជំនួយសម្រាប់ពាក្យបញ្ជារងដែលបានផ្ដល់",
   "cli.help.command.status": "រាយការណ៍ការបកប្រែដែលខ្វះ ឬហួសសម័យ ដោយប្រើ metadata ស្ថានភាពអ្នកបកប្រែ",
   "cli.help.command.translate": "បង្កើត/ធ្វើបច្ចុប្បន្នភាពការបកប្រែតាមរយៈការរួមបញ្ចូល provider ជាមួយសុវត្ថិភាព cache/state",
   "cli.help.command.validate": "ផ្ទៀងផ្ទាត់ឯកសារភាសាដែលបានបកប្រែទល់នឹងលក្ខខណ្ឌថេរទ្រង់ទ្រាយភាសាអង់គ្លេស",
@@ -11,7 +11,7 @@
   "cli.help.diff.options": "ជម្រើស:",
   "cli.help.diff.usage": "ការប្រើប្រាស់: greentic-i18n-translator diff --base <BASE> --head <HEAD> [--en <EN>] [--locale <LOCALE>]",
   "cli.help.option.help": "បោះពុម្ពជំនួយ",
-  "cli.help.option.locale": "Locale សម្រាប់សារពេលដំណើរការ និងលទ្ធផលជំនួយផ្ទាល់ខ្លួន",
+  "cli.help.option.locale": "មូលដ្ឋានីយកម្មសម្រាប់សារពេលដំណើរការ និងលទ្ធផលជំនួយផ្ទាល់ខ្លួន",
   "cli.help.status.option.en": "ផ្លូវទៅកាន់ឯកសារ JSON ផែនទីប្រភពភាសាអង់គ្លេស",
   "cli.help.status.option.langs": "បញ្ជីភាសាបំបែកដោយសញ្ញាក្បៀស ឬ `all`",
   "cli.help.status.options": "ជម្រើស:",

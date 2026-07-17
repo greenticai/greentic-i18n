@@ -1,7 +1,7 @@
 {
   "cli.error.no_target_languages": "keine Zielsprachen ermittelt",
   "cli.help.command.diff": "Vergleicht Schlüssel zwischen Base-/Head-Refs für die englische Quell-Map",
-  "cli.help.command.help": "Gibt diese Meldung oder die Hilfe des angegebenen Unterbefehls/der angegebenen Unterbefehle aus",
+  "cli.help.command.help": "Diese Meldung oder die Hilfe für die angegebenen Unterbefehle ausgeben",
   "cli.help.command.status": "Meldet fehlende oder veraltete Übersetzungen mithilfe von Metadaten zum Übersetzerstatus",
   "cli.help.command.translate": "Erzeugt/aktualisiert Übersetzungen über die Provider-Integration mit Cache-/Status-Sicherheit",
   "cli.help.command.validate": "Validiert übersetzte Sprachdateien gegen englische Formatinvarianten",
