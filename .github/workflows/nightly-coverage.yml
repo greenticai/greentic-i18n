@@ -32,7 +32,13 @@ jobs:
         uses: cargo-bins/cargo-binstall@main
 
       - name: Install coverage tools
-        run: cargo binstall --no-confirm greentic-dev cargo-nextest cargo-llvm-cov
+        # Authenticate binstall so it uses the GitHub API without hitting the
+        # unauthenticated rate limit (403). Without a token, binstall falls back
+        # to building from source, and `cargo install cargo-nextest` without
+        # --locked is hard-rejected by nextest's locked-tripwire crate.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: cargo binstall --no-confirm --locked greentic-dev cargo-nextest cargo-llvm-cov
 
       - name: Enforce coverage policy
         run: greentic-dev coverage
