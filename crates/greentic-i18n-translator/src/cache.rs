@@ -91,3 +91,104 @@ impl CacheStore {
         self.dir.join(format!("{key}{CACHE_FILE_SUFFIX}"))
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::{CACHE_FILE_SUFFIX, CacheStore};
+    use std::fs;
+    use std::path::PathBuf;
+    use std::time::{SystemTime, UNIX_EPOCH};
+
+    fn unique_temp_dir(name: &str) -> PathBuf {
+        let stamp = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .expect("valid system clock")
+            .as_nanos();
+        std::env::temp_dir().join(format!("gt-i18n-cache-{name}-{stamp}"))
+    }
+
+    #[test]
+    fn get_returns_none_when_entry_missing() {
+        let dir = unique_temp_dir("missing");
+        let store = CacheStore::new(dir.clone());
+        assert_eq!(
+            store
+                .get("does-not-exist")
+                .expect("missing is not an error"),
+            None
+        );
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn put_then_get_round_trips_translation() {
+        let dir = unique_temp_dir("roundtrip");
+        let store = CacheStore::new(dir.clone());
+        let key = CacheStore::cache_key("fr", "Hello", "g1", "r1");
+
+        store.put(&key, "Bonjour").expect("put should succeed");
+        assert_eq!(
+            store.get(&key).expect("get should succeed"),
+            Some("Bonjour".to_string())
+        );
+
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn put_creates_missing_cache_directory() {
+        let dir = unique_temp_dir("nested").join("a").join("b");
+        assert!(!dir.exists());
+        let store = CacheStore::new(dir.clone());
+        let key = CacheStore::cache_key("de", "Hi", "g1", "r1");
+
+        store
+            .put(&key, "Hallo")
+            .expect("put should create the directory tree");
+        assert!(dir.exists());
+
+        let _ = fs::remove_dir_all(dir.parent().and_then(|p| p.parent()).unwrap_or(&dir));
+    }
+
+    #[test]
+    fn cache_key_is_deterministic_and_input_sensitive() {
+        let base = CacheStore::cache_key("fr", "Hello", "g1", "r1");
+        assert_eq!(base, CacheStore::cache_key("fr", "Hello", "g1", "r1"));
+
+        assert_ne!(base, CacheStore::cache_key("es", "Hello", "g1", "r1"));
+        assert_ne!(base, CacheStore::cache_key("fr", "Goodbye", "g1", "r1"));
+        assert_ne!(base, CacheStore::cache_key("fr", "Hello", "g2", "r1"));
+        assert_ne!(base, CacheStore::cache_key("fr", "Hello", "g1", "r2"));
+    }
+
+    #[test]
+    fn get_reports_error_for_corrupt_entry() {
+        let dir = unique_temp_dir("corrupt");
+        fs::create_dir_all(&dir).expect("create cache dir");
+        let key = "deadbeef";
+        fs::write(
+            dir.join(format!("{key}{CACHE_FILE_SUFFIX}")),
+            "not valid json",
+        )
+        .expect("write corrupt entry");
+
+        let store = CacheStore::new(dir.clone());
+        let err = store.get(key).expect_err("corrupt entry should error");
+        assert!(
+            err.contains("invalid cache entry"),
+            "unexpected error: {err}"
+        );
+
+        let _ = fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn default_dir_returns_a_translator_scoped_path() {
+        let dir = CacheStore::default_dir();
+        assert!(
+            dir.ends_with("i18n-translator"),
+            "expected translator-scoped cache dir, got {}",
+            dir.display()
+        );
+    }
+}
