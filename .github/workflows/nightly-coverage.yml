@@ -36,9 +36,21 @@ jobs:
         # unauthenticated rate limit (403). Without a token, binstall falls back
         # to building from source, and `cargo install cargo-nextest` without
         # --locked is hard-rejected by nextest's locked-tripwire crate.
+        #
+        # `--disable-strategies compile` makes that fallback impossible: on a 403
+        # (or any other API hiccup) binstall silently degrades to a source build
+        # instead of erroring, which burns ~11 minutes of pointless compilation
+        # and hides the real cause. All three tools publish prebuilt binaries, so
+        # failing loudly is strictly better. The `command -v` checks assert the
+        # binaries really landed on PATH before the coverage step depends on them.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: cargo binstall --no-confirm --locked greentic-dev cargo-nextest cargo-llvm-cov
+        run: |
+          cargo binstall --no-confirm --locked --disable-strategies compile \
+            greentic-dev cargo-nextest cargo-llvm-cov
+          command -v greentic-dev
+          command -v cargo-nextest
+          command -v cargo-llvm-cov
 
       - name: Enforce coverage policy
         run: greentic-dev coverage
