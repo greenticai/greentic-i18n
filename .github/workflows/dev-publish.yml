@@ -28,5 +28,5 @@ jobs:
     uses: greenticai/.github/.github/workflows/dev-publish.yml@main
     with:
       version: ${{ needs.dev-prepare.outputs.version }}
-      crates: "greentic-i18n-lib greentic-i18n-translator"
+      crates: "greentic-i18n-lib greentic-i18n-translator greentic-i18n-cards"
     secrets: inherit
