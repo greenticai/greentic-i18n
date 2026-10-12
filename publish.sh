@@ -38,6 +38,7 @@ echo "Publishing to crates.io (token-protected)..."
 MANIFESTS=(
   "crates/greentic-i18n-lib/Cargo.toml"
   "crates/greentic-i18n-translator/Cargo.toml"
+  "crates/greentic-i18n-cards/Cargo.toml"
   "crates/greentic-i18n/Cargo.toml"
 )
 
