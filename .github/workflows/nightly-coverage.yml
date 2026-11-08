@@ -43,11 +43,32 @@ jobs:
         # and hides the real cause. All three tools publish prebuilt binaries, so
         # failing loudly is strictly better. The `command -v` checks assert the
         # binaries really landed on PATH before the coverage step depends on them.
+        #
+        # Because the compile fallback is disabled, a transient GitHub release
+        # download failure (timeout / 504) fails the job before any test runs.
+        # The install is retried up to 3 times (20s then 40s backoff) to ride
+        # out such network flakes; the last exit code is kept if all attempts fail.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cargo binstall --no-confirm --locked --disable-strategies compile \
-            greentic-dev cargo-nextest cargo-llvm-cov
+          attempt=1
+          max_attempts=3
+          while true; do
+            status=0
+            cargo binstall --no-confirm --locked --disable-strategies compile \
+              greentic-dev cargo-nextest cargo-llvm-cov || status=$?
+            if [ "$status" -eq 0 ]; then
+              break
+            fi
+            if [ "$attempt" -ge "$max_attempts" ]; then
+              echo "cargo binstall failed after ${attempt} attempts (exit ${status})" >&2
+              exit "$status"
+            fi
+            delay=$((attempt * 20))
+            echo "cargo binstall failed (exit ${status}); retrying in ${delay}s (attempt ${attempt}/${max_attempts})" >&2
+            sleep "$delay"
+            attempt=$((attempt + 1))
+          done
           command -v greentic-dev
           command -v cargo-nextest
           command -v cargo-llvm-cov
